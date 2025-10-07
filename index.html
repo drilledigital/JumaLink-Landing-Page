@@ -234,7 +234,6 @@
       .mobile-nav-item:hover,
       .mobile-nav-item.active {
         background-color: rgba(22, 163, 74, 0.1);
-        color: #166534;
         border-left-color: #166534;
       }
 
@@ -1108,7 +1107,7 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-align: center;
-        margin: 40px 0;
+        margin: 40px 0 ;
         line-height: 1;
       }
 
@@ -1392,7 +1391,7 @@
         }
 
         .large-logo {
-          font-size: 120px;
+          font-size: 85px;
         }
       }
     </style>
@@ -1415,7 +1414,7 @@
           </div>
 
           <nav class="nav-menu" role="navigation">
-            <a href="#home" class="nav-item active" role="menuitem">Home</a>
+            <a href="#home" class="nav-item" role="menuitem">Home</a>
             <a href="#about" class="nav-item" role="menuitem">About</a>
             <a href="#how-it-works" class="nav-item" role="menuitem"
               >How It Works</a
@@ -1640,9 +1639,7 @@
           <div class="step-card">
             <div class="step-header">
               <h3 class="step-title">Step 1: Sign Up</h3>
-              <div class="step-icon">
-
-              </div>
+              <div class="step-icon"></div>
             </div>
             <p class="step-description">
               Artisans create a profile showcasing their skills, experience, and
@@ -1919,8 +1916,16 @@
 
           <div class="footer-column">
             <h4 class="footer-column-title">Hire A Worker</h4>
-            <a href="https://whatsapp.com/channel/0029VbB0rpO6hENq4I8uyO3w" class="footer-link">Join the channel</a>
-            <a href="#call" class="footer-link">Book A Call</a>
+            <a
+              href="https://whatsapp.com/channel/0029VbB0rpO6hENq4I8uyO3w"
+              class="footer-link"
+              >Join the channel</a
+            >
+            <a
+              href="https://whatsapp.com/channel/0029VbB0rpO6hENq4I8uyO3w"
+              class="footer-link"
+              >Book A Call</a
+            >
           </div>
         </div>
 
@@ -1975,6 +1980,16 @@
           }
         });
       });
+    </script>
+    <script>
+      document
+        .querySelector(".contact-btn")
+        .addEventListener("click", function () {
+          window.open(
+            "https://whatsapp.com/channel/0029VbB0rpO6hENq4I8uyO3w",
+            "_blank"
+          );
+        });
     </script>
   </body>
 </html>

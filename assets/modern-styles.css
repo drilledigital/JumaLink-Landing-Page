@@ -1,0 +1,728 @@
+/* Modern Style Overrides for JumaLink Landing Page */
+
+/* Enhanced Typography & Spacing */
+:root {
+  --primary-green: #84b975;
+  --dark-green: #0e382c;
+  --light-bg: #fbfcfc;
+  --text-dark: #1a1a1a;
+  --border-radius-lg: 24px;
+  --border-radius-md: 16px;
+  --border-radius-sm: 12px;
+  --spacing-xl: 80px;
+  --spacing-lg: 60px;
+  --spacing-md: 40px;
+  --spacing-sm: 24px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Modern Container Spacing */
+.main-container {
+  padding: 16px !important;
+}
+
+.section {
+  margin-bottom: 24px !important;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    margin-bottom: 16px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    margin-bottom: 12px !important;
+  }
+}
+
+/* Modern Header */
+.header {
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06) !important;
+  padding: 20px 0 !important;
+  margin-bottom: 4px !important;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px !important;
+}
+
+/* Modern Hero Section */
+.hero-section {
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1) !important;
+  margin-top: 16px !important;
+  max-width: 1400px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.hero-content {
+  padding: 80px 70px !important;
+}
+
+.hero-title {
+  font-size: 56px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.05 !important;
+  margin-bottom: 32px !important;
+}
+
+.hero-description {
+  font-size: 19px !important;
+  line-height: 1.75 !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+  margin-bottom: 40px !important;
+}
+
+.hero-form {
+  max-width: 580px !important;
+  gap: 16px !important;
+  margin-bottom: 48px !important;
+}
+
+.email-input,
+#mc_embed_signup input[type="email"] {
+  padding: 20px 28px !important;
+  border-radius: 14px !important;
+  font-size: 17px !important;
+  border: 2px solid rgba(255, 255, 255, 0.25) !important;
+  transition: var(--transition) !important;
+}
+
+.email-input:focus,
+#mc_embed_signup input[type="email"]:focus {
+  border-color: var(--primary-green) !important;
+  box-shadow: 0 0 0 4px rgba(132, 185, 117, 0.15) !important;
+  outline: none !important;
+}
+
+.get-started-btn,
+#mc_embed_signup .button {
+  padding: 20px 40px !important;
+  border-radius: 14px !important;
+  font-weight: 600 !important;
+  font-size: 17px !important;
+  box-shadow: 0 4px 16px rgba(132, 185, 117, 0.3) !important;
+  transition: var(--transition) !important;
+}
+
+.get-started-btn:hover,
+#mc_embed_signup .button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 28px rgba(132, 185, 117, 0.4) !important;
+}
+
+.app-badges {
+  gap: 20px !important;
+  margin-top: 8px !important;
+}
+
+/* Modern Opportunity Section */
+.opportunity-section {
+  padding: 100px 70px !important;
+  margin: 0 auto !important;
+  max-width: 1400px !important;
+}
+
+.opportunity-content {
+  max-width: 100% !important;
+}
+
+.opportunity-header {
+  margin-bottom: 56px !important;
+}
+
+.opportunity-title {
+  font-size: 58px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.05 !important;
+  margin-bottom: 0 !important;
+}
+
+.opportunity-description {
+  font-size: 19px !important;
+  line-height: 1.8 !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+.opportunity-cards {
+  gap: 24px !important;
+}
+
+.opportunity-card:first-child {
+  padding: 40px !important;
+}
+
+.card-title {
+  font-weight: 700 !important;
+  letter-spacing: -0.015em !important;
+  margin-bottom: 16px !important;
+}
+
+.card-description {
+  line-height: 1.7 !important;
+  margin-bottom: 24px !important;
+}
+
+.card-image {
+  margin-top: 24px !important;
+}
+
+/* Modern How It Works */
+.how-it-works {
+  padding: 100px 70px !important;
+  margin: 0 auto !important;
+  max-width: 1400px !important;
+}
+
+.how-it-works-title {
+  font-size: 56px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.05 !important;
+  margin-bottom: 24px !important;
+}
+
+.how-it-works-description {
+  font-size: 19px !important;
+  line-height: 1.75 !important;
+  max-width: 880px !important;
+  margin-bottom: 72px !important;
+}
+
+.steps-container {
+  gap: 32px !important;
+}
+
+.step-card {
+  border: 2px solid #e5e7eb !important;
+  border-radius: 20px !important;
+  padding: 48px 40px !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04) !important;
+  transition: var(--transition) !important;
+}
+
+.step-card:hover {
+  border-color: var(--primary-green) !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-4px) !important;
+}
+
+.step-header {
+  margin-bottom: 20px !important;
+}
+
+.step-title {
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  color: var(--dark-green) !important;
+  letter-spacing: -0.015em !important;
+}
+
+.step-description {
+  font-size: 17px !important;
+  line-height: 1.75 !important;
+  color: #4a5568 !important;
+}
+
+/* Modern Artisans Section */
+.artisans-section {
+  padding: 100px 70px !important;
+  margin: 0 auto !important;
+  max-width: 1400px !important;
+}
+
+.artisans-title {
+  font-size: 56px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.05 !important;
+  margin-bottom: 72px !important;
+}
+
+.artisans-grid {
+  gap: 48px !important;
+}
+
+.artisan-card {
+  border: 2px solid #e5e7eb !important;
+  border-radius: 24px !important;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05) !important;
+  transition: var(--transition) !important;
+}
+
+.artisan-card:hover {
+  border-color: var(--primary-green) !important;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(-4px) !important;
+}
+
+.artisan-info {
+  padding: 32px 36px !important;
+}
+
+.artisan-company {
+  margin-bottom: 12px !important;
+}
+
+.artisan-title {
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.015em !important;
+  margin-bottom: 16px !important;
+}
+
+.artisan-description {
+  font-size: 17px !important;
+  line-height: 1.75 !important;
+  color: #4a5568 !important;
+  margin-bottom: 20px !important;
+}
+
+.artisan-rate {
+  margin-bottom: 28px !important;
+}
+
+.tag, .location-tag {
+  padding: 10px 16px !important;
+  border-radius: 10px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  background-color: #f0f4f8 !important;
+}
+
+/* Modern CTA Section */
+.cta-section {
+  padding: 80px 70px !important;
+  margin: 0 auto !important;
+  max-width: 1400px !important;
+}
+
+.cta-content {
+  gap: 40px !important;
+}
+
+.cta-title {
+  font-size: 54px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.05 !important;
+  margin-bottom: 28px !important;
+}
+
+.cta-description {
+  font-size: 19px !important;
+  line-height: 1.75 !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+  margin-bottom: 40px !important;
+  max-width: 90% !important;
+}
+
+.contact-btn {
+  padding: 20px 44px !important;
+  border-radius: 14px !important;
+  font-weight: 600 !important;
+  font-size: 17px !important;
+  box-shadow: 0 4px 16px rgba(132, 185, 117, 0.3) !important;
+  transition: var(--transition) !important;
+  color: #ffffff !important;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 28px rgba(132, 185, 117, 0.4) !important;
+}
+
+/* Modern Footer */
+.footer {
+  padding: 80px 0 60px !important;
+  margin: 0 !important;
+}
+
+.footer-content {
+  padding: 0 70px !important;
+  margin-bottom: 100px !important;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-title {
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.15 !important;
+}
+
+.footer-links {
+  padding: 0 70px !important;
+  max-width: 1400px;
+  margin: 0 auto 60px !important;
+  gap: 64px !important;
+}
+
+.newsletter h2 {
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  margin-bottom: 24px !important;
+}
+
+.newsletter-form {
+  margin-bottom: 32px !important;
+}
+
+.newsletter {
+  width: 100% !important;
+  max-width: 480px !important;
+}
+
+#mc_embed_signup .clear {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 12px !important;
+  align-items: stretch !important;
+}
+
+#mc_embed_signup input[type="email"] {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+#mc_embed_signup .button {
+  flex-shrink: 0 !important;
+  white-space: nowrap !important;
+}
+
+.social-links {
+  gap: 16px !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .main-container {
+    padding: 12px !important;
+  }
+  
+  .section {
+    margin-bottom: 16px !important;
+  }
+  
+  .hero-title {
+    font-size: 48px !important;
+  }
+  
+  .opportunity-title,
+  .how-it-works-title,
+  .artisans-title,
+  .cta-title {
+    font-size: 48px !important;
+  }
+  
+  .opportunity-section,
+  .how-it-works,
+  .artisans-section {
+    padding: 80px 50px !important;
+  }
+  
+  .cta-section {
+    padding: 70px 50px !important;
+  }
+  
+  .hero-section {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-container {
+    padding: 8px !important;
+  }
+  
+  .header-content {
+    padding: 0 32px !important;
+  }
+  
+  .hero-content {
+    padding: 50px 40px !important;
+  }
+  
+  .hero-title {
+    font-size: 42px !important;
+  }
+  
+  .opportunity-title,
+  .how-it-works-title,
+  .artisans-title,
+  .cta-title {
+    font-size: 42px !important;
+  }
+  
+  .opportunity-section,
+  .how-it-works,
+  .artisans-section,
+  .cta-section {
+    padding: 60px 40px !important;
+    max-width: 100% !important;
+  }
+  
+  .hero-section {
+    max-width: 100% !important;
+  }
+  
+  .footer-content,
+  .footer-links {
+    padding: 0 40px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 6px !important;
+  }
+  
+  .section {
+    margin-bottom: 16px !important;
+  }
+  
+  .header {
+    border-radius: 18px !important;
+  }
+  
+  .header-content {
+    padding: 0 24px !important;
+  }
+  
+  .footer-content {
+    flex-direction: column !important;
+    gap: 40px !important;
+  }
+  
+  .footer-title {
+    width: 100% !important;
+    font-size: 36px !important;
+  }
+  
+  .newsletter {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  #mc_embed_signup .clear {
+    flex-direction: column !important;
+  }
+  
+  #mc_embed_signup .button {
+    width: 100% !important;
+  }
+  
+  .hero-section {
+    border-radius: 20px !important;
+  }
+  
+  .hero-content {
+    padding: 40px 28px !important;
+  }
+  
+  .hero-title {
+    font-size: 36px !important;
+  }
+  
+  .hero-description {
+    font-size: 17px !important;
+  }
+  
+  .opportunity-section,
+  .how-it-works,
+  .artisans-section {
+    padding: 50px 28px !important;
+    border-radius: 20px !important;
+    max-width: 100% !important;
+  }
+  
+  .opportunity-title,
+  .how-it-works-title,
+  .artisans-title,
+  .cta-title {
+    font-size: 36px !important;
+  }
+  
+  .cta-section {
+    padding: 50px 28px !important;
+    border-radius: 20px !important;
+  }
+  
+  .footer {
+    border-radius: 20px !important;
+  }
+  
+  .footer-content,
+  .footer-links {
+    padding: 0 28px !important;
+  }
+  
+  .steps-container {
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    padding: 6px !important;
+  }
+  
+  .section {
+    margin-bottom: 10px !important;
+  }
+  
+  .header {
+    border-radius: 14px !important;
+    padding: 14px 0 !important;
+  }
+  
+  .header-content {
+    padding: 0 18px !important;
+  }
+  
+  .hero-section {
+    border-radius: 16px !important;
+  }
+  
+  .hero-content {
+    padding: 32px 20px !important;
+  }
+  
+  .hero-title {
+    font-size: 30px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .hero-description {
+    font-size: 16px !important;
+    margin-bottom: 28px !important;
+  }
+  
+  .hero-form {
+    max-width: 100% !important;
+  }
+  
+  .email-input,
+  #mc_embed_signup input[type="email"] {
+    padding: 16px 18px !important;
+    font-size: 16px !important;
+  }
+  
+  .get-started-btn,
+  #mc_embed_signup .button {
+    padding: 16px 28px !important;
+  }
+  
+  .opportunity-section,
+  .how-it-works,
+  .artisans-section,
+  .cta-section {
+    padding: 40px 20px !important;
+    border-radius: 16px !important;
+    max-width: 100% !important;
+  }
+  
+  .opportunity-title,
+  .how-it-works-title,
+  .artisans-title,
+  .cta-title {
+    font-size: 30px !important;
+  }
+  
+  .opportunity-description,
+  .how-it-works-description,
+  .cta-description {
+    font-size: 16px !important;
+  }
+  
+  .step-card {
+    padding: 32px 24px !important;
+  }
+  
+  .step-title {
+    font-size: 22px !important;
+  }
+  
+  .artisan-info {
+    padding: 20px 18px !important;
+  }
+  
+  .artisan-title {
+    font-size: 22px !important;
+  }
+  
+  .cta-section {
+    padding: 40px 20px !important;
+    border-radius: 16px !important;
+  }
+  
+  .contact-btn {
+    width: 100% !important;
+  }
+  
+  .footer {
+    border-radius: 16px !important;
+  }
+  
+  .footer-content,
+  .footer-links {
+    padding: 0 20px !important;
+  }
+  
+  .footer-title {
+    font-size: 30px !important;
+  }
+  
+  .newsletter {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .newsletter h2 {
+    font-size: 22px !important;
+  }
+  
+  #mc_embed_signup .clear {
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+  
+  #mc_embed_signup input[type="email"] {
+    width: 100% !important;
+  }
+  
+  #mc_embed_signup .button {
+    width: 100% !important;
+    padding: 16px 24px !important;
+  }
+}
+
+/* Touch Optimization for Mobile */
+@media (hover: none) {
+  .step-card:hover,
+  .artisan-card:hover {
+    transform: none !important;
+  }
+  
+  button, .cta-button, .get-started-btn, .contact-btn {
+    -webkit-tap-highlight-color: transparent;
+  }
+}

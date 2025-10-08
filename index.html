@@ -1,7 +1,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>
       JumaLink - Find Trusted Artisans in Minutes | Ghana's Premier Marketplace
     </title>
@@ -67,6 +67,16 @@
         background-color: #84b975;
         padding: 4px;
       }
+      
+      @media (max-width: 480px) {
+        .main-container {
+          padding: 2px;
+        }
+        
+        .section {
+          margin-bottom: 6px;
+        }
+      }
 
       .section {
         width: 100%;
@@ -97,6 +107,22 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 56px;
+      }
+      
+      @media (max-width: 480px) {
+        .header {
+          margin: 8px 4px 0 4px;
+          padding: 10px 0;
+        }
+        
+        .header-content {
+          padding: 0 16px;
+        }
+        
+        .logo-image {
+          width: 40px;
+          height: 40px;
+        }
       }
 
       /* Scrolled state with glassmorphism */
@@ -272,6 +298,14 @@
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
         min-height: 600px;
       }
+      
+      @media (max-width: 480px) {
+        .hero-section {
+          margin: 12px 8px 0;
+          border-radius: 16px;
+          min-height: auto;
+        }
+      }
 
       .hero-content {
         flex: 1;
@@ -286,6 +320,26 @@
         align-items: center;
         margin-bottom: 16px;
         gap: 16px;
+      }
+      
+      @media (max-width: 480px) {
+        .hero-stats {
+          gap: 12px;
+          margin-bottom: 20px;
+        }
+        
+        .avatar {
+          width: 36px;
+          height: 36px;
+        }
+        
+        .stats-number {
+          font-size: 14px;
+        }
+        
+        .stats-label {
+          font-size: 14px;
+        }
       }
 
       .stats-image {
@@ -374,6 +428,33 @@
         background-color: #6fa05f;
         transform: translateY(-2px);
       }
+      
+      @media (max-width: 480px) {
+        .get-started-btn {
+          padding: 14px 20px;
+          font-size: 16px;
+          min-height: 48px;
+          touch-action: manipulation;
+        }
+        
+        .email-input {
+          padding: 14px 12px;
+          font-size: 16px;
+          min-height: 48px;
+        }
+        
+        .newsletter input[type="email"] {
+          padding: 14px 12px !important;
+          font-size: 16px !important;
+          min-height: 48px;
+        }
+        
+        .button {
+          padding: 14px 20px !important;
+          font-size: 16px !important;
+          min-height: 48px;
+        }
+      }
 
       .app-badges {
         display: flex;
@@ -457,6 +538,13 @@
         gap: 20px; /* tighter gutters to match mock */
         height: auto; /* allow natural height to prevent overflow */
       }
+      
+      @media (max-width: 1024px) {
+        .opportunity-cards {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+      }
 
       /* Left Card - Connect with jobs & clients */
       .opportunity-card:first-child {
@@ -537,6 +625,15 @@
         background: none;
         position: relative;
       }
+      
+      @media (max-width: 768px) {
+        .opportunity-card:last-child {
+          grid-template-columns: 1fr;
+          grid-template-rows: 280px auto auto;
+          gap: 16px;
+          padding: 12px;
+        }
+      }
 
       /* Top section with hero content */
       .opportunity-card:last-child > div:first-child {
@@ -551,6 +648,18 @@
         z-index: 1;
         border-radius: 16px;
         overflow: hidden;
+      }
+      
+      @media (max-width: 768px) {
+        .opportunity-card:last-child > div:first-child {
+          grid-column: 1;
+          padding: 24px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          text-align: left;
+          min-height: 280px;
+        }
       }
 
       /* ensure hero copy is readable over image */
@@ -591,6 +700,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+      }
+      
+      @media (max-width: 768px) {
+        .opportunity-card:last-child > div:nth-child(2) {
+          grid-column: 1;
+          padding: 20px;
+          min-height: auto;
+        }
       }
 
       .opportunity-card:last-child > div:nth-child(2) h4 {
@@ -635,6 +752,14 @@
         border-radius: 50%;
         border: 2px solid #4ede79;
       }
+      
+      @media (max-width: 480px) {
+        .opportunity-card:last-child > div:nth-child(2) > div > div > div,
+        .opportunity-card:last-child > div:nth-child(2) > div > div img {
+          width: 28px;
+          height: 28px;
+        }
+      }
 
       /* QR Code section */
       .opportunity-card:last-child > div:last-child {
@@ -649,6 +774,14 @@
         justify-content: center;
         align-items: center;
         grid-column: 2 / 3;
+      }
+      
+      @media (max-width: 768px) {
+        .opportunity-card:last-child > div:last-child {
+          grid-column: 1;
+          padding: 20px;
+          min-height: 180px;
+        }
       }
 
       .opportunity-card:last-child > div:last-child img:first-child {
@@ -695,6 +828,11 @@
         .opportunity-title {
           font-size: 40px;
         }
+        
+        .opportunity-cards {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
       }
 
       @media (max-width: 768px) {
@@ -705,12 +843,15 @@
         .opportunity-cards {
           grid-template-columns: 1fr;
           height: auto;
-          gap: 20px;
+          gap: 24px;
         }
 
-        .opportunity-card:first-child,
+        .opportunity-card:first-child {
+          min-height: auto;
+        }
+        
         .opportunity-card:last-child {
-          min-height: 400px;
+          min-height: auto;
         }
 
         .opportunity-title {
@@ -724,23 +865,87 @@
 
       @media (max-width: 480px) {
         .opportunity-section {
-          padding: 30px 16px;
+          padding: 30px 12px;
+          margin: 6px 8px;
         }
 
         .opportunity-title {
-          font-size: 28px;
+          font-size: 24px;
+          line-height: 1.2;
+        }
+        
+        .opportunity-description {
+          font-size: 14px;
         }
 
         .card-title {
-          font-size: 24px;
+          font-size: 20px;
+        }
+        
+        .card-description {
+          font-size: 14px;
         }
 
         .opportunity-card:last-child > div:last-child {
-          margin: 0 8px 8px;
+          padding: 16px;
+          min-height: 160px;
         }
 
         .opportunity-card:last-child > div:nth-child(2) {
-          margin: 0 8px;
+          padding: 16px;
+        }
+        
+        .opportunity-card:last-child > div:first-child {
+          padding: 20px;
+          min-height: 240px;
+        }
+        
+        .opportunity-card:first-child {
+          padding: 20px;
+        }
+        
+        .action-title {
+          font-size: 16px;
+        }
+        
+        .opportunity-card:last-child .card-title {
+          font-size: 22px;
+          margin-bottom: 8px;
+        }
+        
+        .opportunity-card:last-child .card-description {
+          font-size: 14px;
+        }
+        
+        .opportunity-card:last-child > div:nth-child(2) h4 {
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+        
+        .opportunity-card:last-child > div:nth-child(2) p {
+          font-size: 13px;
+          margin-bottom: 20px;
+        }
+        
+        .trust-section p {
+          font-size: 11px;
+          margin-bottom: 12px;
+        }
+        
+        .opportunity-card:last-child > div:last-child p {
+          font-size: 16px;
+          margin-top: 12px;
+        }
+        
+        .opportunity-card:last-child > div:last-child img:first-child {
+          width: 80%;
+          margin-bottom: 12px;
+        }
+        
+        .opportunity-card:last-child > div:last-child img:nth-child(2) {
+          width: 100px;
+          height: 100px;
+          transform: translate(-50%, -55%);
         }
       }
 
@@ -750,6 +955,42 @@
         border-radius: 24px;
         padding: 106px 56px;
         margin: 0 12px;
+      }
+      
+      @media (max-width: 768px) {
+        .how-it-works {
+          padding: 50px 24px;
+          margin: 6px 8px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .how-it-works {
+          padding: 40px 16px;
+          border-radius: 16px;
+        }
+        
+        .how-it-works-title {
+          font-size: 24px;
+          margin-bottom: 16px;
+        }
+        
+        .how-it-works-description {
+          font-size: 14px;
+          margin-bottom: 32px;
+        }
+        
+        .step-card {
+          padding: 24px 20px;
+        }
+        
+        .step-title {
+          font-size: 20px;
+        }
+        
+        .step-description {
+          font-size: 14px;
+        }
       }
 
       .how-it-works-title {
@@ -821,6 +1062,46 @@
         border-radius: 24px;
         padding: 72px 56px;
         margin: 6px 12px;
+      }
+      
+      @media (max-width: 768px) {
+        .artisans-section {
+          padding: 50px 24px;
+          margin: 6px 8px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .artisans-section {
+          padding: 40px 16px;
+          border-radius: 16px;
+        }
+        
+        .artisans-title {
+          font-size: 24px;
+          margin-bottom: 32px;
+        }
+        
+        .artisan-info {
+          padding: 16px 12px;
+        }
+        
+        .artisan-title {
+          font-size: 20px;
+        }
+        
+        .artisan-description {
+          font-size: 14px;
+        }
+        
+        .artisan-tags {
+          gap: 8px;
+        }
+        
+        .tag, .location-tag {
+          font-size: 12px;
+          padding: 4px 6px;
+        }
       }
 
       .artisans-title {
@@ -930,6 +1211,36 @@
         padding: 20px 50px;
         margin: 0 12px;
         color: #ffffff;
+      }
+      
+      @media (max-width: 768px) {
+        .cta-section {
+          padding: 40px 24px;
+          margin: 6px 8px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .cta-section {
+          padding: 32px 16px;
+          border-radius: 16px;
+        }
+        
+        .cta-title {
+          font-size: 24px;
+          margin-bottom: 16px;
+        }
+        
+        .cta-description {
+          font-size: 14px;
+          margin-bottom: 24px;
+        }
+        
+        .contact-btn {
+          padding: 14px 20px;
+          font-size: 16px;
+          width: 100%;
+        }
       }
 
       .cta-content {
@@ -1099,6 +1410,51 @@
         border-radius: 24px;
         padding: 40px 0;
         margin: 0 12px;
+      }
+      
+      @media (max-width: 768px) {
+        .footer {
+          margin: 6px 8px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .footer {
+          border-radius: 16px;
+          padding: 32px 0;
+        }
+        
+        .footer-title {
+          font-size: 24px !important;
+          line-height: 1.2;
+        }
+        
+        .newsletter h2 {
+          font-size: 18px;
+        }
+        
+        .footer-links {
+          padding: 0 16px;
+          gap: 20px;
+        }
+        
+        .footer-content {
+          padding: 0 16px;
+          margin-bottom: 60px;
+        }
+        
+        .contact-item {
+          gap: 12px;
+        }
+        
+        .contact-item span, .contact-item div {
+          font-size: 14px;
+        }
+        
+        .large-logo {
+          font-size: 60px;
+          margin: 20px 0;
+        }
       }
       .footer-content {
         display: flex;
@@ -1477,6 +1833,16 @@
           flex-direction: column;
           gap: 12px;
           align-items: center;
+        }
+        
+        .app-store-badge {
+          width: 160px;
+          height: 52px;
+        }
+        
+        .google-play-badge {
+          width: 175px;
+          height: 50px;
         }
 
         .opportunity-section {

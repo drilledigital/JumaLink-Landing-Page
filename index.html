@@ -20,6 +20,9 @@
       sizes="32x32"
       href="./assets/Group 12.png"
     />
+    
+    <!-- Mailchimp CSS -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -979,6 +982,117 @@
         border-radius: 24px;
       }
 
+      /* Mailchimp Form Styles */
+      #mc_embed_signup {
+        background: transparent !important;
+        clear: left;
+        font: 14px Helvetica, Arial, sans-serif;
+        width: 100% !important;
+      }
+      
+      #mc_embed_signup form {
+        display: block;
+        position: relative;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+      }
+      
+      #mc_embed_signup h2 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 16px;
+        color: #000000;
+      }
+      
+      #mc_embed_signup .indicates-required {
+        display: none;
+      }
+      
+      #mc_embed_signup .mc-field-group {
+        padding-bottom: 0;
+        margin: 0;
+      }
+      
+      #mc_embed_signup .mc-field-group label {
+        display: none;
+      }
+      
+      #mc_embed_signup input[type="email"] {
+        flex: 1;
+        padding: 12px;
+        border: 1px solid #000000;
+        border-radius: 12px;
+        font-size: 16px;
+        width: 100%;
+        margin: 0;
+        background-color: #ffffff;
+      }
+      
+      #mc_embed_signup .button {
+        background-color: #0e382c;
+        color: #ffffff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 0;
+      }
+      
+      #mc_embed_signup .button:hover {
+        background-color: #1a4d3a;
+      }
+      
+      #mc_embed_signup .clear {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 42px;
+      }
+      
+      #mc_embed_signup .optionalParent {
+        margin: 0;
+      }
+      
+      #mc_embed_signup .optionalParent .clear {
+        margin-bottom: 0;
+      }
+      
+      #mc_embed_signup .refferal_badge {
+        display: none !important;
+      }
+      
+      #mc_embed_signup p {
+        display: none !important;
+      }
+      
+      #mc-responses {
+        clear: both;
+        color: #e74c3c;
+        font-size: 14px;
+        margin: 10px 0;
+      }
+      
+      #mc-responses .response {
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 4px;
+      }
+      
+      #mce-success-response {
+        color: #27ae60;
+        background-color: rgba(39, 174, 96, 0.1);
+        border: 1px solid #27ae60;
+      }
+      
+      #mce-error-response {
+        color: #e74c3c;
+        background-color: rgba(231, 76, 60, 0.1);
+        border: 1px solid #e74c3c;
+      }
+
       /* Footer */
       .footer {
         background-color: #fbfcfc;
@@ -1133,6 +1247,10 @@
 
         .hero-form {
           flex-direction: row;
+        }
+        
+        #mc_embed_signup_hero form {
+          flex-direction: row !important;
         }
 
         .hero-title {
@@ -1349,6 +1467,11 @@
           flex-direction: column;
           gap: 12px;
         }
+        
+        #mc_embed_signup_hero form {
+          flex-direction: column !important;
+          gap: 12px;
+        }
 
         .app-badges {
           flex-direction: column;
@@ -1487,13 +1610,15 @@
           </p>
 
           <div class="hero-form">
-            <input
-              type="email"
-              class="email-input"
-              placeholder="Enter your email"
-              aria-label="Email address"
-            />
-            <button class="get-started-btn">Get Started</button>
+            <div id="mc_embed_signup_hero" style="width: 100%;">
+              <form action="https://jumalink.us11.list-manage.com/subscribe/post?u=cb0c183e536800b8801b34904&amp;id=3cce114c29&amp;f_id=0075c6e3f0" method="post" id="mc-embedded-subscribe-form-hero" name="mc-embedded-subscribe-form-hero" class="validate" target="_blank" style="display: flex; gap: 16px; width: 100%; flex-direction: column;">
+                <input type="email" name="EMAIL" class="email-input" id="mce-EMAIL-hero" required="" value="" placeholder="Enter your email" aria-label="Email address">
+                <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                  <input type="text" name="b_cb0c183e536800b8801b34904_3cce114c29" tabindex="-1" value="">
+                </div>
+                <input type="submit" name="subscribe" id="mc-embedded-subscribe-hero" class="get-started-btn" value="Get Started">
+              </form>
+            </div>
           </div>
 
           <div class="app-badges">
@@ -1846,15 +1971,29 @@
           </div>
 
           <div class="newsletter">
-            <h3 class="newsletter-title">Be first to receive new updates!</h3>
-            <div class="newsletter-form">
-              <input
-                type="email"
-                class="newsletter-input"
-                placeholder="Enter your email"
-                aria-label="Newsletter email"
-              />
-              <button class="subscribe-btn">Subscribe</button>
+            <div id="mc_embed_signup">
+              <form action="https://jumalink.us11.list-manage.com/subscribe/post?u=cb0c183e536800b8801b34904&amp;id=3cce114c29&amp;f_id=0075c6e3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                <div id="mc_embed_signup_scroll">
+                  <h2>Be first to receive new updates!</h2>
+                  <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                  <div class="mc-field-group">
+                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="Enter your email">
+                  </div>
+                  <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                    <div class="response" id="mce-success-response" style="display: none;"></div>
+                  </div>
+                  <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                    <input type="text" name="b_cb0c183e536800b8801b34904_3cce114c29" tabindex="-1" value="">
+                  </div>
+                  <div class="optionalParent">
+                    <div class="clear foot">
+                      <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
             <div class="social-links">
               <img
@@ -1990,6 +2129,30 @@
             "_blank"
           );
         });
+    </script>
+    
+    <!-- Mailchimp Validation Script -->
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">
+      (function($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0]='EMAIL';
+        ftypes[0]='email';
+        fnames[1]='FNAME';
+        ftypes[1]='text';
+        fnames[2]='LNAME';
+        ftypes[2]='text';
+        fnames[3]='ADDRESS';
+        ftypes[3]='address';
+        fnames[4]='PHONE';
+        ftypes[4]='phone';
+        fnames[5]='BIRTHDAY';
+        ftypes[5]='birthday';
+        fnames[6]='COMPANY';
+        ftypes[6]='text';
+      }(jQuery));
+      var $mcj = jQuery.noConflict(true);
     </script>
   </body>
 </html>

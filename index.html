@@ -22,6 +22,27 @@
     <meta name="apple-mobile-web-app-title" content="JumaLink" />
     <link rel="canonical" href="https://jumalink.com/" />
     
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-94PH46K68C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-94PH46K68C');
+    </script>
+    
+    <!-- Microsoft Clarity - Add your tracking code here -->
+    <!-- Uncomment and replace XXXXXXXXX with your Project ID
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "XXXXXXXXX");
+    </script>
+    -->
+    
     <!-- Favicon code goes here -->
     <link
       rel="icon"
@@ -814,7 +835,7 @@
       .opportunity-section {
         background-color: #0e382c;
         border-radius: 24px;
-        padding: 80px 60px;
+        padding: 80px 0;
         margin: 0;
         color: #ffffff;
         position: relative;
@@ -823,13 +844,13 @@
       
       @media (max-width: 1024px) {
         .opportunity-section {
-          padding: 60px 40px;
+          padding: 60px 0;
         }
       }
       
       @media (max-width: 768px) {
         .opportunity-section {
-          padding: 50px 32px;
+          padding: 50px 0;
           border-radius: 20px;
         }
       }
@@ -837,6 +858,25 @@
       .opportunity-content {
         max-width: 1400px;
         margin: 0 auto;
+        padding: 0 60px;
+      }
+      
+      @media (max-width: 1024px) {
+        .opportunity-content {
+          padding: 0 40px;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .opportunity-content {
+          padding: 0 32px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .opportunity-content {
+          padding: 0 20px;
+        }
       }
 
       .opportunity-header {
@@ -1189,10 +1229,6 @@
       }
 
       @media (max-width: 768px) {
-        .opportunity-section {
-          padding: 40px 24px;
-        }
-
         .opportunity-cards {
           grid-template-columns: 1fr;
           height: auto;
@@ -1217,10 +1253,6 @@
       }
 
       @media (max-width: 480px) {
-        .opportunity-section {
-          padding: 30px 12px;
-          margin: 6px 8px;
-        }
 
         .opportunity-title {
           font-size: 24px;
@@ -1308,6 +1340,9 @@
         border-radius: 24px;
         padding: 80px 60px;
         margin: 0;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
       }
       
       @media (max-width: 1024px) {
@@ -1443,6 +1478,9 @@
         border-radius: 24px;
         padding: 80px 60px;
         margin: 0;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
       }
       
       @media (max-width: 1024px) {
@@ -1620,6 +1658,9 @@
         padding: 60px;
         margin: 0;
         color: #ffffff;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
       }
       
       @media (max-width: 1024px) {
@@ -2398,22 +2439,6 @@
         .google-play-badge {
           width: 175px;
           height: 50px;
-        }
-
-        .opportunity-section {
-          padding: 80px 24px;
-        }
-
-        .how-it-works {
-          padding: 60px 24px;
-        }
-
-        .artisans-section {
-          padding: 40px 24px;
-        }
-
-        .cta-section {
-          padding: 120px 24px;
         }
 
         .footer {

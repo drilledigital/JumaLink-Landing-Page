@@ -77,9 +77,10 @@
   .navbar {
     position: fixed;
     top: 26px;
-    left: 50%;
-    z-index: 10;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    z-index: 1000;
     width: calc(100% - 40px);
     max-width: 1280px;
     background: var(--white);
@@ -139,7 +140,7 @@
     background: var(--text-primary);
     color: var(--white);
     padding: 10px 20px;
-    border-radius: 50px;
+    border-radius: 16px;
     font-size: var(--fs-sm);
     font-weight: 500;
     text-decoration: none;
@@ -205,11 +206,15 @@
       padding: 100px var(--space-xl) var(--space-xl);
       gap: var(--space-lg);
       transform: translateX(100%);
-      transition: transform var(--transition-base);
+      transition:
+        transform var(--transition-base),
+        visibility var(--transition-base);
+      visibility: hidden;
     }
 
     .nav-links.open {
       transform: translateX(0);
+      visibility: visible;
     }
 
     .nav-links a {

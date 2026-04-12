@@ -1,4 +1,11 @@
-/* ===== CSS Reset & Base ===== */
+@font-face {
+  font-family: "Figtree";
+  src: url("/fonts/Figtree/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
 *,
 *::before,
 *::after {
@@ -32,7 +39,8 @@ a {
   color: inherit;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -49,11 +57,10 @@ input {
   outline: none;
 }
 
-/* ===== Design Tokens ===== */
 :root {
   /* Colors */
   --green-primary: #1B5E20;
-  --green-accent: #4CAF50;
+  --green-accent: #388E3C;
   --green-dark: #1B3A1B;
   --green-light: #E8F5E9;
   --white: #FFFFFF;
@@ -62,7 +69,7 @@ input {
   --gray-200: #EEEEEE;
   --gray-300: #E0E0E0;
   --text-primary: #1A1A1A;
-  --text-secondary: #666666;
+  --text-secondary: #555555;
   --text-muted: #999999;
   --orange-star: #FF9800;
   --red-badge: #F44336;

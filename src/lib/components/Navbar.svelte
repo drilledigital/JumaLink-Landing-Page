@@ -10,22 +10,17 @@
   }
 
   const navLinks = [
-    { label: 'Home', href: '#home' },
-    { label: 'How it Works', href: '#how-it-works' },
-    { label: 'Services', href: '#services' },
-    { label: 'Contact', href: '#contact' },
-    { label: 'Privacy Policy', href: '#footer' }
+    { label: "Home", href: "#home" },
+    { label: "How it Works", href: "#how-it-works" },
+    { label: "Services", href: "#services" },
+    { label: "Contact", href: "#contact" },
+    { label: "Privacy Policy", href: "#footer" },
   ];
 </script>
 
 <nav class="navbar" id="navbar">
   <div class="nav-container">
     <a href="#home" class="logo" onclick={closeMenu}>
-      <span class="logo-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#1B5E20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </span>
       <span class="logo-text">JumaLink</span>
     </a>
 
@@ -39,14 +34,28 @@
 
     <a href="#contact" class="cta-btn">
       Download Now
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
-        <polyline points="7 10 12 15 17 10"/>
-        <line x1="12" y1="15" x2="12" y2="3"/>
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+        <polyline points="7 10 12 15 17 10" />
+        <line x1="12" y1="15" x2="12" y2="3" />
       </svg>
     </a>
 
-    <button class="hamburger" onclick={toggleMenu} aria-label="Toggle menu" aria-expanded={mobileMenuOpen}>
+    <button
+      class="hamburger"
+      onclick={toggleMenu}
+      aria-label="Toggle menu"
+      aria-expanded={mobileMenuOpen}
+    >
       <span class="bar" class:open={mobileMenuOpen}></span>
       <span class="bar" class:open={mobileMenuOpen}></span>
       <span class="bar" class:open={mobileMenuOpen}></span>
@@ -56,20 +65,25 @@
 
 {#if mobileMenuOpen}
   <!-- svelte-ignore a11y_no_static_element_interactions -->
-  <div class="overlay" onclick={closeMenu} onkeydown={(e) => e.key === 'Escape' && closeMenu()} role="presentation"></div>
+  <div
+    class="overlay"
+    onclick={closeMenu}
+    onkeydown={(e) => e.key === "Escape" && closeMenu()}
+    role="presentation"
+  ></div>
 {/if}
 
 <style>
   .navbar {
     position: fixed;
-    top: 12px;
+    top: 26px;
     left: 50%;
+    z-index: 10;
     transform: translateX(-50%);
     width: calc(100% - 40px);
     max-width: 1280px;
-    z-index: 1000;
     background: var(--white);
-    border-radius: 50px;
+    border-radius: 24px;
     box-shadow: var(--shadow-md);
     padding: 0 var(--space-lg);
   }
@@ -91,9 +105,13 @@
     text-decoration: none;
   }
 
-  .logo-icon {
-    display: flex;
-    align-items: center;
+  .logo-text {
+    font-family: "Figtree", sans-serif;
+    background-size: 200% auto;
+    background: linear-gradient(180deg, #428a4e 22.6%, #112414 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .nav-links {

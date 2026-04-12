@@ -53,10 +53,10 @@
 </script>
 
 {#if showBanner}
-  <div class="cookie-banner" role="dialog" aria-live="polite">
+  <div class="cookie-banner" role="dialog" aria-live="polite" aria-labelledby="cookie-heading">
     <div class="cookie-content">
       <div class="cookie-text">
-        <h4>We value your privacy</h4>
+        <h4 id="cookie-heading">We value your privacy</h4>
         <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.</p>
       </div>
       <div class="cookie-actions">

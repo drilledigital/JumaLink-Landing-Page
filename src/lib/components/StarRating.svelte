@@ -6,14 +6,19 @@
   const hasHalf = rating % 1 >= 0.5;
 </script>
 
-<div class="star-rating" style="--star-size: {size}">
+<div 
+  class="star-rating" 
+  style="--star-size: {size}"
+  role="img"
+  aria-label="{rating} out of 5 stars"
+>
   {#each Array(5) as _, i}
     {#if i < fullStars}
-      <span class="star filled">★</span>
+      <span class="star filled" aria-hidden="true">★</span>
     {:else if i === fullStars && hasHalf}
-      <span class="star half">★</span>
+      <span class="star half" aria-hidden="true">★</span>
     {:else}
-      <span class="star empty">★</span>
+      <span class="star empty" aria-hidden="true">★</span>
     {/if}
   {/each}
 </div>

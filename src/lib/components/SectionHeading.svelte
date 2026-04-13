@@ -24,9 +24,10 @@
   }
 
   h2 {
-    font-size: var(--fs-4xl);
-    font-weight: 700;
-    line-height: 1.2;
+    font-size: var(--fs-6xl);
+    font-weight: 400;
+    line-height: 74px;
+    letter-spacing: -0.64px;
     color: var(--text-primary);
   }
 
@@ -35,7 +36,7 @@
   }
 
   h2 :global(.accent-word) {
-    color: var(--green-accent);
+    color: var(--green-light-2);
   }
 
   .subtitle {

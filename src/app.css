@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Arial', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   color: var(--text-primary);
   background: var(--white);
   line-height: 1.6;
@@ -135,7 +135,7 @@ input {
 }
 
 .section-padding {
-  padding: var(--space-5xl) 0;
+  padding: var(--space-3xl) 0;
 }
 
 /* ===== Responsive Breakpoints ===== */

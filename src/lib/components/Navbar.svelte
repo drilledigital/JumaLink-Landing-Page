@@ -75,7 +75,7 @@
 
 <style>
   .navbar {
-    position: fixed;
+    position: absolute;
     top: 26px;
     left: 0;
     right: 0;
@@ -108,6 +108,7 @@
 
   .logo-text {
     font-family: "Figtree", sans-serif;
+    font-size: var(--fs-3xl);
     background-size: 200% auto;
     background: linear-gradient(180deg, #428a4e 22.6%, #112414 100%);
     background-clip: text;
@@ -117,13 +118,13 @@
 
   .nav-links {
     display: flex;
-    gap: var(--space-xl);
+    gap: var(--space-2xl);
     list-style: none;
   }
 
   .nav-links a {
-    font-size: var(--fs-sm);
-    font-weight: 500;
+    font-size: var(--fs-md);
+    font-weight: 400;
     color: var(--text-primary);
     transition: color var(--transition-fast);
     text-decoration: none;
@@ -186,7 +187,7 @@
     z-index: 999;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 990px) {
     .navbar {
       top: 8px;
       width: calc(100% - 24px);

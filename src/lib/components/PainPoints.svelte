@@ -29,15 +29,24 @@
 
   .cards-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: var(--space-2xl);
     justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    .cards-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   @media (max-width: 768px) {
     .cards-grid {
       grid-template-columns: 1fr;
-      gap: var(--space-xl);
+      gap: var(--space-lg);
+      padding: 0 var(--space-md);
     }
   }
 </style>

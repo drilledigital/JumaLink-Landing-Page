@@ -5,7 +5,13 @@
 
 <div class="pain-card">
   <div class="card-image-wrapper">
-    <img src={image} alt={title} loading="lazy" />
+    <enhanced:img 
+      src={image} 
+      alt={title} 
+      sizes="(min-width: 1024px) 302px, 90vw"
+      loading="lazy"
+      class="pain-card-img"
+    />
     <div class="badge">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
         <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"/>
@@ -18,20 +24,56 @@
 
 <style>
   .pain-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 362px;
+    min-height: 457.42px;
+    border-radius: 18px;
+    background: var(--white);
+    overflow: hidden;
     text-align: center;
-    max-width: 340px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 640px) {
+    .pain-card {
+      max-width: 100%;
+    }
   }
 
   .card-image-wrapper {
     position: relative;
-    width: 100%;
-    aspect-ratio: 4/3;
-    border-radius: var(--radius-md);
+    width: calc(100% - 60px);
+    max-width: 302px;
+    height: 255.4px;
+    margin: 20px auto 0;
+    border-radius: 12px;
     overflow: hidden;
-    margin-bottom: var(--space-lg);
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 640px) {
+    .card-image-wrapper {
+      width: calc(100% - 60px);
+      height: auto;
+      aspect-ratio: 302 / 255.4;
+    }
   }
 
   .card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(60%);
+  }
+
+  .pain-card-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .pain-card-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -42,25 +84,42 @@
     position: absolute;
     top: 12px;
     left: 12px;
-    width: 32px;
-    height: 32px;
-    background: var(--red-badge);
-    border-radius: var(--radius-full);
+    width: 44px;
+    height: 44px;
+    background: #DC3545;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .badge svg {
+    width: 28px;
+    height: 28px;
   }
 
   h3 {
-    font-size: var(--fs-lg);
-    font-weight: 600;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
     color: var(--text-primary);
-    margin-bottom: var(--space-sm);
+    margin: 16px 8px 0;
+    padding: 0;
   }
 
   p {
-    font-size: var(--fs-sm);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.68px;
     color: var(--text-secondary);
-    line-height: 1.6;
+    margin: 12px 8px;
+    padding: 0 16px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 </style>

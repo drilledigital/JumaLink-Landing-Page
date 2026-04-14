@@ -79,12 +79,12 @@
     top: 26px;
     left: 0;
     right: 0;
-    margin-inline: auto;
     z-index: 1000;
-    width: calc(100% - 40px);
-    max-width: 1280px;
-    background: var(--white);
+    max-width: 85%;
     border-radius: 24px;
+    margin-inline: auto;
+    width: calc(100% - 40px);
+    background: var(--white);
     box-shadow: var(--shadow-md);
     padding: 0 var(--space-lg);
   }

@@ -1,5 +1,7 @@
 <script>
   import heroImage from "$lib/assets/hero.jpg";
+  import AppStoreButton from "./AppStoreButton.svelte";
+  import PlayStoreButton from "./PlayStoreButton.svelte";
 </script>
 
 <section class="hero" id="home">
@@ -23,7 +25,9 @@
       reviews, and fast response.
     </p>
     <div class="store-buttons">
-      <a href="#contact" class="store-btn" aria-label="Download on App Store">
+      <AppStoreButton />
+      <PlayStoreButton />
+      <!-- <a href="#contact" class="store-btn" aria-label="Download on App Store">
         <svg
           class="store-icon"
           viewBox="0 0 24 24"
@@ -39,8 +43,8 @@
           <span class="store-label">Download on the</span>
           <span class="store-name">App Store</span>
         </div>
-      </a>
-      <a href="#contact" class="store-btn" aria-label="Get it on Google Play">
+      </a> -->
+      <!-- <a href="#contact" class="store-btn" aria-label="Get it on Google Play">
         <svg
           class="store-icon"
           viewBox="0 0 24 24"
@@ -56,7 +60,7 @@
           <span class="store-label">Get it on</span>
           <span class="store-name">Google Play</span>
         </div>
-      </a>
+      </a> -->
     </div>
   </div>
 </section>
@@ -94,15 +98,15 @@
 
   .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     padding-top: calc(var(--nav-height) + 60px);
     padding-bottom: var(--space-5xl);
     max-width: 80%;
   }
 
   h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 600;
+    font-size: clamp(2.5rem, 10vw, 6rem);
+    font-weight: 400;
     line-height: 1.15;
     color: var(--white);
     margin-bottom: var(--space-xl);
@@ -113,10 +117,14 @@
   }
 
   .hero-subtitle {
-    font-size: var(--fs-lg);
-    color: rgba(255, 255, 255, 0.85);
-    line-height: 1.7;
-    max-width: 560px;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 580px;
+    letter-spacing: 0%;
+    font-family: Inter;
+    font-style: Regular;
+    font-size: var(--fs-xl);
+    color: rgba(255, 255, 255);
     margin-bottom: var(--space-3xl);
   }
 

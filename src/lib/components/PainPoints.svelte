@@ -1,7 +1,7 @@
 <script>
-  import SectionHeading from './SectionHeading.svelte';
-  import PainPointCard from './PainPointCard.svelte';
-  import { painPoints } from '$lib/data/painPoints.js';
+  import SectionHeading from "./SectionHeading.svelte";
+  import PainPointCard from "./PainPointCard.svelte";
+  import { painPoints } from "$lib/data/painPoints.js";
 </script>
 
 <section class="pain-points section-padding" id="pain-points">
@@ -24,7 +24,7 @@
 
 <style>
   .pain-points {
-    background: var(--gray-bg);
+    background: var(--white);
   }
 
   .cards-grid {

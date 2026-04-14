@@ -5,16 +5,18 @@
 
 <div class="pain-card">
   <div class="card-image-wrapper">
-    <enhanced:img 
-      src={image} 
-      alt={title} 
+    <enhanced:img
+      src={image}
+      alt={title}
       sizes="(min-width: 1024px) 302px, 90vw"
       loading="lazy"
       class="pain-card-img"
     />
     <div class="badge">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-        <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"/>
+        <path
+          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+        />
       </svg>
     </div>
   </div>
@@ -30,7 +32,7 @@
     max-width: 362px;
     min-height: 457.42px;
     border-radius: 18px;
-    background: var(--white);
+    background: var(--gray-bg);
     overflow: hidden;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -61,23 +63,9 @@
     }
   }
 
-  .card-image-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: grayscale(60%);
-  }
-
   .pain-card-img {
     width: 100%;
     height: 100%;
-  }
-
-  .pain-card-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: grayscale(60%);
   }
 
   .badge {
@@ -86,7 +74,7 @@
     left: 12px;
     width: 44px;
     height: 44px;
-    background: #DC3545;
+    background: #dc3545;
     border-radius: 50%;
     display: flex;
     align-items: center;

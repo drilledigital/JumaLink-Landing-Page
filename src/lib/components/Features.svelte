@@ -1,13 +1,16 @@
 <script>
-  import SectionHeading from "./SectionHeading.svelte";
-  import FeatureCard from "./FeatureCard.svelte";
+  import QRCode from "./QRCode.svelte";
+  import ArrowSign from "./ArrowSign.svelte";
   import CurvyLine from "./CurvyLine.svelte";
   import DollarSign from "./DollarSign.svelte";
+  import FeatureCard from "./FeatureCard.svelte";
+  import SectionHeading from "./SectionHeading.svelte";
   import TwentyFourHourSign from "./24HourSign.svelte";
-  import ArrowSign from "./ArrowSign.svelte";
   import RightArrowSign from "./RightArrowSign.svelte";
-  import femalePlumberImg from "$lib/assets/female-plumber-working.png";
+
+  import jumaLinkQrImg from "$lib/assets/JumaLink-1024.svg";
   import { features, whyUsePoints } from "$lib/data/features.js";
+  import femalePlumberImg from "$lib/assets/female-plumber-working.png";
 
   const whyUseIcons = [
     DollarSign,
@@ -48,7 +51,7 @@
                 <span class="why-icon">
                   <svelte:component this={whyUseIcons[index] ?? DollarSign} />
                 </span>
-                <span>{point.text}</span>
+                <span style="font-size: 1.1rem;">{point.text}</span>
               </li>
             {/each}
           </ul>
@@ -56,70 +59,13 @@
 
         <div class="why-right">
           <div class="qr-placeholder">
-            <svg viewBox="0 0 100 100" width="170" height="170">
-              <rect width="100" height="100" fill="white" rx="8" />
-              <rect
-                x="10"
-                y="10"
-                width="25"
-                height="25"
-                fill="#111111"
-                rx="3"
-              />
-              <rect
-                x="65"
-                y="10"
-                width="25"
-                height="25"
-                fill="#111111"
-                rx="3"
-              />
-              <rect
-                x="10"
-                y="65"
-                width="25"
-                height="25"
-                fill="#111111"
-                rx="3"
-              />
-              <rect
-                x="40"
-                y="40"
-                width="20"
-                height="20"
-                fill="#111111"
-                rx="2"
-              />
-              <rect x="15" y="15" width="15" height="15" fill="white" rx="2" />
-              <rect x="70" y="15" width="15" height="15" fill="white" rx="2" />
-              <rect x="15" y="70" width="15" height="15" fill="white" rx="2" />
-              <rect x="18" y="18" width="9" height="9" fill="#111111" rx="1" />
-              <rect x="73" y="18" width="9" height="9" fill="#111111" rx="1" />
-              <rect x="18" y="73" width="9" height="9" fill="#111111" rx="1" />
-              <rect x="45" y="10" width="5" height="5" fill="#111111" />
-              <rect x="55" y="10" width="5" height="5" fill="#111111" />
-              <rect x="45" y="20" width="5" height="5" fill="#111111" />
-              <rect x="10" y="45" width="5" height="5" fill="#111111" />
-              <rect x="20" y="45" width="5" height="5" fill="#111111" />
-              <rect x="10" y="55" width="5" height="5" fill="#111111" />
-              <rect x="65" y="45" width="5" height="5" fill="#111111" />
-              <rect x="75" y="45" width="5" height="5" fill="#111111" />
-              <rect x="85" y="45" width="5" height="5" fill="#111111" />
-              <rect x="65" y="55" width="5" height="5" fill="#111111" />
-              <rect x="45" y="65" width="5" height="5" fill="#111111" />
-              <rect x="55" y="65" width="5" height="5" fill="#111111" />
-              <rect x="65" y="65" width="5" height="5" fill="#111111" />
-              <rect x="75" y="65" width="5" height="5" fill="#111111" />
-              <rect x="85" y="65" width="5" height="5" fill="#111111" />
-              <rect x="45" y="75" width="5" height="5" fill="#111111" />
-              <rect x="55" y="75" width="5" height="5" fill="#111111" />
-              <rect x="65" y="75" width="5" height="5" fill="#111111" />
-              <rect x="45" y="85" width="5" height="5" fill="#111111" />
-              <rect x="75" y="85" width="5" height="5" fill="#111111" />
-              <rect x="85" y="85" width="5" height="5" fill="#111111" />
-            </svg>
+            <img src={jumaLinkQrImg} alt="JumaLink QR code" class="qr-image" loading="lazy" />
           </div>
-          <p class="qr-label">Scan to Try JumaLink</p>
+
+          <div class="qr-icon-container">
+            <span class="qr-icon"><QRCode /></span>
+            <p class="qr-label">Scan to Try JumaLink</p>
+          </div>
         </div>
 
         <div class="why-center">
@@ -155,22 +101,22 @@
     max-width: 1200px;
     background: #f2f2f2;
     border-radius: var(--radius-xl);
-    padding: var(--space-2xl) 0;
+    padding: 0;
     overflow: visible;
   }
 
   .why-content {
     position: relative;
-    min-height: clamp(320px, 34vw, 420px);
+    min-height: clamp(320px, 34vw, 360px);
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: var(--space-xl) var(--space-xl) 0;
+    padding: var(--space-3xl) var(--space-2xl) 0;
     z-index: 2;
   }
 
   .why-left h3 {
-    font-size: 2.1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #111111;
     margin-bottom: var(--space-lg);
@@ -203,8 +149,8 @@
   }
 
   .why-icon :global(svg) {
-    width: 16px;
-    height: 16px;
+    width: 26px;
+    height: 26px;
   }
 
   .why-icon :global(path) {
@@ -219,7 +165,7 @@
 
   .why-worker-img {
     display: block;
-    width: clamp(220px, 26vw, 310px);
+    width: clamp(200px, 26vw, 240px);
     filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.12));
   }
 
@@ -233,7 +179,7 @@
   .why-center {
     position: absolute;
     left: 50%;
-    bottom: -11.5%;
+    bottom: 0%;
     transform: translateX(-50%);
     z-index: 4;
   }
@@ -251,36 +197,55 @@
 
   .qr-placeholder {
     background: #ffffff;
-    border-radius: 0.6rem;
     border: 1px solid #dddddd;
-    padding: 0.75rem;
+    border-radius: 0.4rem;
+    padding: 0.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: var(--shadow-sm);
   }
 
+  .qr-image {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .qr-icon-container {
+    display: flex;
+    gap: 0.65rem;
+    text-align: center;
+    margin-top: var(--space-md);
+  }
+
+  .qr-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .qr-label {
     color: #1a1a1a;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   .banner-curve {
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 13%;
     left: 0;
     right: 0;
-    border-radius: var(--radius-xl);
     z-index: 1;
     opacity: 0.95;
-    pointer-events: none;
     overflow: hidden;
+    pointer-events: none;
   }
 
   .banner-curve :global(svg) {
     position: absolute;
-    left: -12%;
+    left: 0%;
     bottom: 22px;
     width: 120%;
     height: auto;
@@ -316,7 +281,7 @@
     }
 
     .why-center {
-      bottom: -38px;
+      bottom: 3%;
     }
 
     .why-right {
@@ -388,7 +353,7 @@
       z-index: 3;
     }
 
-    .qr-placeholder svg {
+    .qr-image {
       width: 150px;
       height: 150px;
     }

@@ -17,8 +17,8 @@ export const features = [
 ];
 
 export const whyUsePoints = [
-  { icon: '🚫', text: 'No middlemen or delays' },
-  { icon: '✅', text: 'Access to skilled local workers' },
-  { icon: '🚀', text: 'Faster Service Delivery' },
-  { icon: '💪', text: 'Supports local employment' }
+  { icon: 'RightArrowSign', text: 'No middlemen or delays' },
+  { icon: '24HourSign', text: 'Access to skilled local workers' },
+  { icon: 'RightArrowSign', text: 'Faster Service Delivery' },
+  { icon: '24HourSign', text: 'Supports local employment' }
 ];

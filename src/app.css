@@ -61,9 +61,10 @@ input {
   /* Colors */
   --green-primary: #1B5E20;
   --green-accent: #388E3C;
-  --green-dark: #1B3A1B;
+  --green-dark: #0E382C;
   --green-light: #E8F5E9;
   --green-light-2: #67F57E;
+  --yellow: #FAF95F;
   --white: #FFFFFF;
   --gray-bg: #F5F5F5;
   --gray-100: #F9F9F9;

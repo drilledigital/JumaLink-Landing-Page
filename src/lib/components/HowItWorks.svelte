@@ -1,4 +1,5 @@
 <script>
+  import howItWorksImg from "$lib/assets/how-jumalink-works.png";
 </script>
 
 <section class="how-it-works section-padding" id="how-it-works">
@@ -28,55 +29,13 @@
 
       <!-- Center Phone -->
       <div class="phone-mockup">
-        <div class="phone-frame">
-          <div class="phone-status-bar">
-            <span>1:54</span>
-            <span class="phone-notch"></span>
-            <span class="status-icons">📶 🔋</span>
-          </div>
-          <div class="phone-content">
-            <div class="nav-back">←</div>
-            <div class="profile-section">
-              <div class="profile-avatar">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop" alt="Kevin Prempeh" loading="lazy" />
-              </div>
-              <h4>Kevin Prempeh <span class="verified-badge">✓</span></h4>
-              <p class="profile-service">Wiring Installation</p>
-              <p class="profile-location">West Legon, Greater Accra</p>
-              <div class="profile-rating">⭐ 4.6 (1 review)</div>
-            </div>
-
-            <div class="about-section">
-              <h5>About</h5>
-              <p>Experienced event catering specialist with 12 years in the trade. Dedicated to quality work.</p>
-            </div>
-
-            <div class="services-section">
-              <div class="services-header">
-                <h5>Services</h5>
-                <span class="show-more">Show more ∨</span>
-              </div>
-              <div class="services-grid">
-                <div class="service-item">
-                  <span class="svc-name">Wiring Installation</span>
-                  <span class="svc-price">GH₵4,302.58 contract</span>
-                </div>
-                <div class="service-item">
-                  <span class="svc-name">Laundry & Ironing</span>
-                  <span class="svc-price">GH₵4,354.93/day</span>
-                </div>
-                <div class="service-item">
-                  <span class="svc-name">Auto Mechanic</span>
-                  <span class="svc-price">GH₵2,338.03/day</span>
-                </div>
-                <div class="service-item">
-                  <span class="svc-name">Tire Services</span>
-                  <span class="svc-price">● Negotiable</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <enhanced:img
+          src={howItWorksImg}
+          alt="JumaLink artisan profile screen"
+          class="phone-shot"
+          loading="lazy"
+          sizes="(max-width: 1024px) 320px, 360px"
+        />
       </div>
 
       <!-- Right Features -->
@@ -101,69 +60,77 @@
 
 <style>
   .how-it-works {
+    position: relative;
     background: var(--green-dark);
     color: var(--white);
+    overflow: hidden;
+  }
+
+  #how-it-works {
+    padding-bottom: 0 !important;
   }
 
   .section-header {
     text-align: center;
-    margin-bottom: var(--space-3xl);
+    margin-bottom: clamp(0.85rem, 1.8vw, 1.5rem);
   }
 
   .section-header h2 {
-    font-size: var(--fs-4xl);
-    font-weight: 700;
+    font-size: clamp(2.1rem, 3.3vw, 3.05rem);
+    font-weight: 500;
     color: var(--white);
+    line-height: 1.08;
   }
 
   .section-header .subtitle {
-    font-size: var(--fs-3xl);
-    color: var(--green-accent);
-    font-weight: 600;
+    font-size: clamp(1.95rem, 2.9vw, 2.85rem);
+    color: var(--yellow);
+    font-weight: 500;
+    line-height: 1.1;
   }
 
   .content-layout {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    gap: var(--space-3xl);
-    align-items: center;
+    gap: clamp(1.8rem, 3vw, 3rem);
+    align-items: start;
   }
 
   .features-col {
     display: flex;
     flex-direction: column;
-    gap: var(--space-3xl);
+    gap: clamp(2.4rem, 3vw, 3.25rem);
   }
 
   .feature-item h3 {
-    font-size: var(--fs-lg);
-    font-weight: 600;
-    margin-bottom: var(--space-sm);
+    font-size: clamp(1.15rem, 1.35vw, 1.95rem);
+    font-weight: 500;
+    margin-bottom: 0.6rem;
   }
 
   .feature-item .accent {
-    color: var(--green-accent);
+    color: var(--yellow);
   }
 
   .feature-item p {
-    font-size: var(--fs-sm);
-    color: rgba(255, 255, 255, 0.75);
-    line-height: 1.7;
+    font-size: clamp(0.9rem, 0.8vw, 1.05rem);
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.55;
+    max-width: 310px;
   }
 
   .progress-bar {
     position: relative;
     width: 100%;
-    height: 3px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 2px;
-    margin-top: var(--space-lg);
+    height: 1px;
+    background: linear-gradient(270deg,#d1d09b 0%, #3c3b1b 50%, rgba(255, 255, 255, 0) 100%);
+    margin-top: var(--space-md);
   }
 
+  
+
   .progress-fill {
-    height: 100%;
-    background: var(--green-accent);
-    border-radius: 2px;
+    display: none;
   }
 
   .progress-dot {
@@ -173,153 +140,39 @@
     transform: translate(50%, -50%);
     width: 10px;
     height: 10px;
-    background: var(--green-accent);
+    background: var(--yellow);
     border-radius: var(--radius-full);
   }
 
-  /* Phone Mockup */
   .phone-mockup {
-    flex-shrink: 0;
-  }
-
-  .phone-frame {
-    width: 270px;
-    background: #111;
-    border-radius: 32px;
-    padding: 8px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-  }
-
-  .phone-status-bar {
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6px 16px;
-    font-size: 10px;
-    color: var(--white);
-  }
-
-  .phone-notch {
-    width: 24px;
-    height: 24px;
-    background: #000;
-    border-radius: var(--radius-full);
-  }
-
-  .status-icons {
-    font-size: 8px;
-  }
-
-  .phone-content {
-    background: var(--white);
-    border-radius: 24px;
-    padding: 16px;
-    color: var(--text-primary);
-    min-height: 420px;
-  }
-
-  .nav-back {
-    font-size: 18px;
-    margin-bottom: 12px;
-    color: var(--text-primary);
-  }
-
-  .profile-section {
-    text-align: center;
-    margin-bottom: 16px;
-  }
-
-  .profile-avatar {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 8px;
-    border-radius: var(--radius-full);
+    width: clamp(280px, 33vw, 420px);
     overflow: hidden;
+    border-radius: 2.2rem;
+    transform: translateY(20%);
   }
 
-  .profile-avatar img {
-    width: 100%;
+  .phone-mockup::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
     height: 100%;
-    object-fit: cover;
+    pointer-events: none;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.55) 65%,
+      rgba(0, 0, 0, 0.92) 100%
+    );
   }
 
-  .profile-section h4 {
-    font-size: 14px;
-    font-weight: 600;
-  }
-
-  .verified-badge {
-    color: var(--green-accent);
-    font-size: 12px;
-  }
-
-  .profile-service {
-    color: var(--green-primary);
-    font-size: 11px;
-  }
-
-  .profile-location {
-    color: var(--text-secondary);
-    font-size: 10px;
-  }
-
-  .profile-rating {
-    font-size: 10px;
-    margin-top: 4px;
-  }
-
-  .about-section {
-    margin-bottom: 12px;
-  }
-
-  .about-section h5,
-  .services-header h5 {
-    font-size: 12px;
-    font-weight: 600;
-    margin-bottom: 4px;
-  }
-
-  .about-section p {
-    font-size: 10px;
-    color: var(--text-secondary);
-    line-height: 1.5;
-  }
-
-  .services-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 8px;
-  }
-
-  .show-more {
-    font-size: 10px;
-    color: var(--green-accent);
-  }
-
-  .services-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6px;
-  }
-
-  .service-item {
-    background: var(--gray-bg);
-    padding: 8px;
-    border-radius: 6px;
-  }
-
-  .svc-name {
+  .phone-shot {
+    width: 100%;
+    height: auto;
     display: block;
-    font-size: 9px;
-    font-weight: 500;
-  }
-
-  .svc-price {
-    display: block;
-    font-size: 8px;
-    color: var(--green-accent);
-    margin-top: 2px;
   }
 
   @media (max-width: 1024px) {
@@ -338,18 +191,44 @@
 
     .phone-mockup {
       order: 1;
-      display: flex;
       justify-content: center;
+      margin: 0 auto;
+      transform: translateY(4%);
+    }
+
+    .phone-mockup::after {
+      display: none;
     }
 
     .features-col.right {
       order: 3;
     }
+
+    .feature-item p {
+      max-width: 100%;
+    }
   }
 
   @media (max-width: 768px) {
-    .phone-frame {
-      width: 240px;
+    .section-header {
+      margin-bottom: var(--space-xl);
     }
+
+    .section-header h2 {
+      font-size: 2rem;
+    }
+
+    .section-header .subtitle {
+      font-size: 1.9rem;
+    }
+
+    .feature-item h3 {
+      font-size: 1.35rem;
+    }
+
+    .phone-mockup {
+      width: min(78vw, 330px);
+    }
+
   }
 </style>

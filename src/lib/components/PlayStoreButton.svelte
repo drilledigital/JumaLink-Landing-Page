@@ -1,3 +1,10 @@
+<a
+    href="https://play.google.com/store/apps/details?id=com.jumalink.app"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="play-store-link"
+    aria-label="Get JumaLink on Google Play"
+>
 <svg
     width="200"
     height="76"
@@ -61,3 +68,23 @@
         />
     </defs>
 </svg>
+</a>
+
+<style>
+  .play-store-link {
+    display: inline-block;
+    line-height: 0;
+    border-radius: 24px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .play-store-link:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  .play-store-link:focus-visible {
+    outline: 2px solid var(--green-primary, #1b5e20);
+    outline-offset: 3px;
+  }
+</style>

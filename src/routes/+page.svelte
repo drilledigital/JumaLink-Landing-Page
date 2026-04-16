@@ -60,6 +60,7 @@
       "@type": "MobileApplication",
       "name": "JumaLink",
       "operatingSystem": "ANDROID, IOS",
+      "installUrl": "https://play.google.com/store/apps/details?id=com.jumalink.app",
       "applicationCategory": "BusinessApplication",
       "offers": {
         "@type": "Offer",

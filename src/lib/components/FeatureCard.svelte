@@ -1,5 +1,5 @@
 <script>
-  import searchResultsImg from "$lib/assets/search-results.jpeg";
+  import searchResultsImg from "$lib/assets/search-results.png";
 
   /** @type {{ title: string, description: string, image: string }} */
   let { title, description, image } = $props();
@@ -100,11 +100,11 @@
 
   .card-image {
     flex: 1;
-    min-height: 200px;
+    min-height: 260px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding: var(--space-md);
+    padding: 0 var(--space-lg);
   }
 
   /* Bubbles graphic */
@@ -222,7 +222,7 @@
   /* App screenshot */
   .app-screenshot {
     width: 90%;
-    height: 240px;
+    height: 360px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -235,6 +235,7 @@
     height: 100%;
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     object-fit: cover;
+    object-position: center top;
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.12);
   }
 </style>

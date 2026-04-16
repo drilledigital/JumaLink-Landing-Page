@@ -29,16 +29,18 @@
 
   .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--space-2xl);
     justify-items: center;
     max-width: 1200px;
     margin: 0 auto;
   }
 
-  @media (min-width: 1200px) {
+  @media (max-width: 1199px) {
     .cards-grid {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr;
+      max-width: 420px;
+      gap: var(--space-xl);
     }
   }
 
@@ -46,6 +48,7 @@
     .cards-grid {
       grid-template-columns: 1fr;
       gap: var(--space-lg);
+      max-width: 100%;
       padding: 0 var(--space-md);
     }
   }

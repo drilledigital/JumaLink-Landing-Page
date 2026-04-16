@@ -69,6 +69,7 @@
   #how-it-works {
     padding-top: clamp(1.25rem, 2vw, 2rem);
     padding-bottom: 0;
+    margin-bottom: 7%;
   }
 
   .section-header {

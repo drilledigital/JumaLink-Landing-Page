@@ -253,7 +253,10 @@
 
   @media (max-width: 1100px) {
     .features-grid {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .why-content {
@@ -295,10 +298,6 @@
   }
 
   @media (max-width: 820px) {
-    .features-grid {
-      grid-template-columns: 1fr;
-    }
-
     .why-banner {
       margin: 0 var(--space-md);
       padding: var(--space-lg) 0 var(--space-md);

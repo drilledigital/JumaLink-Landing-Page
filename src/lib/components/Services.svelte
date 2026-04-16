@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
   import SectionHeading from './SectionHeading.svelte';
   import ArtisanCard from './ArtisanCard.svelte';
   import { services } from '$lib/data/services.js';
@@ -39,4 +39,4 @@
     flex-direction: column;
     gap: var(--space-2xl);
   }
-</style>
+</style> -->

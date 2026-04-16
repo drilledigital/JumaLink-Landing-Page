@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
   import SectionHeading from './SectionHeading.svelte';
   import TestimonialCard from './TestimonialCard.svelte';
   import { testimonials } from '$lib/data/testimonials.js';
@@ -47,4 +47,4 @@
       grid-template-columns: 1fr;
     }
   }
-</style>
+</style> -->

@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+    "verify:build": "test -f build/index.html && test -f build/robots.txt && test -f build/sitemap.xml",
     "preview": "vite preview"
   },
   "devDependencies": {

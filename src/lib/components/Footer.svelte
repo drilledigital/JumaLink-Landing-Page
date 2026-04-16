@@ -10,14 +10,58 @@
 
 <footer class="footer" id="footer">
   <div class="container">
-    <!-- Top Area -->
+    <!-- Top Area: left = headline + links; right = subscribe -->
     <div class="footer-top">
-      <div class="footer-headline">
-        <h2>
-          Reliable <span class="accent">Artisans</span> for<br />Your Home and
-          business.
-        </h2>
+      <div class="footer-left-stack">
+        <div class="footer-headline">
+          <h2>
+            Reliable <span class="accent">Artisans</span> for<br />Your Home and
+            business.
+          </h2>
+        </div>
+
+        <div class="footer-links">
+          <div class="link-col">
+            <h4>Contact</h4>
+            <ul>
+              <li>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  ><rect x="2" y="4" width="20" height="16" rx="2" /><polyline
+                    points="22,7 12,13 2,7"
+                  /></svg
+                >
+                <span>support@jumalink.com</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="link-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home" class="active-link">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#how-it-works">How it Works</a></li>
+              <li><a href="#waitlist">Join Waitlist</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="link-col">
+            <h4>Hire A Worker</h4>
+            <ul>
+              <li><a href="#channel">Join the channel</a></li>
+              <li><a href="#call">Book A Call</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
+
       <div class="footer-subscribe">
         <h3>Be first to receive new updates!</h3>
         <form class="subscribe-form" onsubmit={handleSubscribe}>
@@ -70,78 +114,6 @@
       </div>
     </div>
 
-    <!-- Footer Links -->
-    <div class="footer-links">
-      <div class="link-col">
-        <h4>Contact</h4>
-        <ul>
-          <li>
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              ><rect x="2" y="4" width="20" height="16" rx="2" /><polyline
-                points="22,7 12,13 2,7"
-              /></svg
-            >
-            <span>support@jumalink.com</span>
-          </li>
-          <!-- <li>
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              ><path
-                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"
-              /></svg
-            >
-            <span>(+233)</span>
-          </li> -->
-          <!-- <li>
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              ><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle
-                cx="12"
-                cy="10"
-                r="3"
-              /></svg
-            >
-            <span>XXXXXXXXXXXX<br />XXXXXX XXX</span>
-          </li> -->
-        </ul>
-      </div>
-
-      <div class="link-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#home" class="active-link">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#how-it-works">How it Works</a></li>
-          <li><a href="#waitlist">Join Waitlist</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="link-col">
-        <h4>Hire A Worker</h4>
-        <ul>
-          <li><a href="#channel">Join the channel</a></li>
-          <li><a href="#call">Book A Call</a></li>
-        </ul>
-      </div>
-    </div>
-
     <!-- Watermark -->
     <div class="watermark">
       <span class="gradient-text">JumaLink</span>
@@ -158,8 +130,9 @@
 
   .footer-top {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: clamp(1rem, 2.8vw, 2.5rem);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
+    gap: clamp(1.5rem, 4vw, 4rem);
+    align-items: start;
     margin-bottom: clamp(0.9rem, 1.8vw, 1.5rem);
     padding-bottom: clamp(0.75rem, 1.6vw, 1.25rem);
     width: 96vw;
@@ -168,6 +141,20 @@
     transform: translateX(-50%);
     padding-left: clamp(1rem, 3.2vw, 3rem);
     padding-right: clamp(1rem, 3.2vw, 3rem);
+  }
+
+  .footer-left-stack {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.25rem, 2.5vw, 2rem);
+    min-width: 0;
+  }
+
+  .footer-subscribe {
+    justify-self: center;
+    width: 80%;
+    max-width: 60%;
+    min-width: 0;
   }
 
   .footer-headline h2 {
@@ -238,24 +225,22 @@
     color: var(--green-primary);
   }
 
-  /* Footer Links */
+  /* Footer links: sits under headline, same column as CTA left */
   .footer-links {
     display: grid;
-    grid-template-columns: 1.2fr 0.6fr 0.6fr;
-    gap: clamp(1rem, 2vw, 2.5rem);;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-left: clamp(1rem, 3.2vw, 3rem);
-    padding-right: clamp(1rem, 3.2vw, 3rem);
-    max-width: 1600px;
+    grid-template-columns: repeat(3, minmax(0, auto));
+    justify-content: start;
+    column-gap: clamp(2rem, 12vw, 13vw);
+    row-gap: var(--space-lg);
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .link-col h4 {
-    font-size: 0.86rem;
-    font-weight: 700;
-    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--green-primary);
     margin-bottom: 0.6rem;
   }
 
@@ -269,7 +254,8 @@
     display: flex;
     align-items: flex-start;
     gap: 0.4rem;
-    font-size: 0.76rem;
+    font-size: 0.9rem;
+    font-weight: 500;
     color: var(--text-secondary);
   }
 
@@ -280,7 +266,8 @@
   }
 
   .link-col a {
-    font-size: 0.76rem;
+    font-size: 0.9rem;
+    font-weight: 500;
     color: var(--text-secondary);
     transition: color var(--transition-fast);
     text-decoration: none;
@@ -345,6 +332,11 @@
       margin-bottom: var(--space-xl);
       padding-bottom: var(--space-xl);
       max-width: 100vw;
+    }
+
+    .footer-subscribe {
+      justify-self: stretch;
+      max-width: none;
     }
 
     .footer-headline h2 {

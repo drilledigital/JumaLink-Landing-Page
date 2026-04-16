@@ -103,7 +103,7 @@
             >
             <span>(+233)</span>
           </li>
-          <li>
+          <!-- <li>
             <svg
               width="16"
               height="16"
@@ -118,7 +118,7 @@
               /></svg
             >
             <span>XXXXXXXXXXXX<br />XXXXXX XXX</span>
-          </li>
+          </li> -->
         </ul>
       </div>
 
@@ -152,24 +152,29 @@
 <style>
   .footer {
     background: var(--white);
-    padding: var(--space-5xl) 0 0;
+    padding: clamp(1.5rem, 2.8vw, 3rem) 0 0;
     overflow: hidden;
   }
 
   .footer-top {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-3xl);
-    margin-bottom: var(--space-3xl);
-    padding-bottom: var(--space-2xl);
-    border-bottom: 1px solid var(--gray-200);
+    gap: clamp(1rem, 2.8vw, 2.5rem);
+    margin-bottom: clamp(0.9rem, 1.8vw, 1.5rem);
+    padding-bottom: clamp(0.75rem, 1.6vw, 1.25rem);
+    width: 96vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: clamp(1rem, 3.2vw, 3rem);
+    padding-right: clamp(1rem, 3.2vw, 3rem);
   }
 
   .footer-headline h2 {
-    font-size: var(--fs-4xl);
-    font-weight: 700;
+    font-size: clamp(2rem, 3.1vw, 3rem);
+    font-weight: 600;
     color: var(--text-primary);
-    line-height: 1.2;
+    line-height: 1.1;
   }
 
   .footer-headline .accent {
@@ -177,23 +182,23 @@
   }
 
   .footer-subscribe h3 {
-    font-size: var(--fs-lg);
+    font-size: clamp(1.1rem, 1.3vw, 1.5rem);
     font-weight: 600;
-    margin-bottom: var(--space-md);
+    margin-bottom: 0.65rem;
   }
 
   .subscribe-form {
     display: flex;
     gap: var(--space-sm);
-    margin-bottom: var(--space-lg);
+    margin-bottom: 0.9rem;
   }
 
   .subscribe-form input {
     flex: 1;
-    padding: 12px 20px;
+    padding: 10px 14px;
     border: 1.5px solid var(--gray-300);
-    border-radius: 50px;
-    font-size: var(--fs-sm);
+    border-radius: 10px;
+    font-size: 0.82rem;
     background: var(--white);
   }
 
@@ -202,11 +207,11 @@
   }
 
   .subscribe-btn {
-    padding: 12px 28px;
-    background: var(--text-primary);
+    padding: 10px 14px;
+    background: var(--green-dark);
     color: var(--white);
-    border-radius: 50px;
-    font-size: var(--fs-sm);
+    border-radius: 6px;
+    font-size: 0.75rem;
     font-weight: 600;
     cursor: pointer;
     transition: background var(--transition-fast);
@@ -218,7 +223,7 @@
 
   .social-icons {
     display: flex;
-    gap: var(--space-md);
+    gap: 0.45rem;
   }
 
   .social-icons a {
@@ -226,6 +231,7 @@
     transition: color var(--transition-fast);
     display: flex;
     align-items: center;
+    font-size: 0.9rem;
   }
 
   .social-icons a:hover {
@@ -235,29 +241,35 @@
   /* Footer Links */
   .footer-links {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    gap: var(--space-3xl);
-    padding-bottom: var(--space-3xl);
+    grid-template-columns: 1.2fr 0.6fr 0.6fr;
+    gap: clamp(1rem, 2vw, 2.5rem);;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: clamp(1rem, 3.2vw, 3rem);
+    padding-right: clamp(1rem, 3.2vw, 3rem);
+    max-width: 1600px;
   }
 
   .link-col h4 {
-    font-size: var(--fs-sm);
+    font-size: 0.86rem;
     font-weight: 700;
-    color: var(--green-primary);
-    margin-bottom: var(--space-lg);
+    color: var(--text-primary);
+    margin-bottom: 0.6rem;
   }
 
   .link-col ul {
     display: flex;
     flex-direction: column;
-    gap: var(--space-md);
+    gap: 0.42rem;
   }
 
   .link-col li {
     display: flex;
     align-items: flex-start;
-    gap: var(--space-sm);
-    font-size: var(--fs-sm);
+    gap: 0.4rem;
+    font-size: 0.76rem;
     color: var(--text-secondary);
   }
 
@@ -268,7 +280,7 @@
   }
 
   .link-col a {
-    font-size: var(--fs-sm);
+    font-size: 0.76rem;
     color: var(--text-secondary);
     transition: color var(--transition-fast);
     text-decoration: none;
@@ -288,27 +300,32 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 100%;
-    margin-top: var(--space-4xl);
-    overflow: hidden;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: clamp(0rem, 0.6vw, 0.4rem);
+    overflow: visible;
+    padding-bottom: 2.5%;
   }
 
   .gradient-text {
     font-family: "Figtree", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: clamp(60px, 12vw, 350px);
-    line-height: 1;
+    font-size: clamp(72px, 18vw, 350px);
+    line-height: 0.82;
     display: flex;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
+    max-width: 100%;
     background: linear-gradient(90deg, #428a4e 0%, #112414 50%, #428a4e 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+    transform: translateY(16%);
     /* animation: gradientMove 5s linear infinite; */
   }
 
@@ -322,13 +339,36 @@
   }
 
   @media (max-width: 768px) {
+    .footer-top {
+      grid-template-columns: 1fr;
+      gap: var(--space-xl);
+      margin-bottom: var(--space-xl);
+      padding-bottom: var(--space-xl);
+      max-width: 100vw;
+    }
+
+    .footer-headline h2 {
+      font-size: clamp(1.9rem, 8vw, 2.75rem);
+      line-height: 1.12;
+    }
+
     .footer-links {
       grid-template-columns: 1fr;
       gap: var(--space-xl);
+      max-width: 100vw;
     }
 
     .subscribe-form {
       flex-direction: column;
+    }
+
+    .subscribe-btn {
+      width: fit-content;
+    }
+
+    .gradient-text {
+      font-size: clamp(60px, 20vw, 150px);
+      transform: translateY(10%);
     }
   }
 </style>

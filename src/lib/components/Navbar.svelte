@@ -1,6 +1,8 @@
 <script>
   let mobileMenuOpen = $state(false);
 
+  let previousBodyOverflow = "";
+
   function toggleMenu() {
     mobileMenuOpen = !mobileMenuOpen;
   }
@@ -16,6 +18,17 @@
     { label: "Contact", href: "#contact" },
     { label: "Privacy Policy", href: "#footer" },
   ];
+
+  $effect(() => {
+    if (!mobileMenuOpen) return;
+
+    previousBodyOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = previousBodyOverflow;
+    };
+  });
 </script>
 
 <nav class="navbar" id="navbar">
@@ -187,7 +200,7 @@
     z-index: 999;
   }
 
-  @media (max-width: 990px) {
+  @media (max-width: 1200px) {
     .navbar {
       top: 8px;
       width: calc(100% - 24px);
@@ -211,6 +224,9 @@
         transform var(--transition-base),
         visibility var(--transition-base);
       visibility: hidden;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
     }
 
     .nav-links.open {

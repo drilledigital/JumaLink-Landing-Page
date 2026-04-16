@@ -1,4 +1,5 @@
 <script>
+  import ctaWorker from "$lib/assets/CTA-worker.jpg";
 </script>
 
 <section class="cta" id="contact">
@@ -15,7 +16,7 @@
     </div>
     <div class="cta-image">
       <img
-        src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=600&fit=crop"
+        src={ctaWorker}
         alt="Artisan at work"
         loading="lazy"
       />
@@ -30,59 +31,71 @@
 
   .cta-inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 450px;
-    border-radius: var(--radius-xl);
-    overflow: hidden;
+    grid-template-columns: 1.05fr 1fr;
+    height: clamp(320px, 40vw, 750px);
+    gap: var(--space-lg);
+    background: transparent;
+    align-items: stretch;
   }
 
   .cta-text {
-    background: var(--green-dark);
-    padding: var(--space-4xl);
+    border-radius: var(--radius-xl);
+    padding: clamp(2.5rem, 4vw, 3.25rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  h2 {
-    font-size: var(--fs-3xl);
-    font-weight: 700;
     color: var(--white);
-    margin-bottom: var(--space-lg);
-    line-height: 1.3;
+    background: var(--green-dark);
+    overflow: hidden;
+    height: 100%;
   }
 
-  h2 .accent {
-    color: var(--green-accent);
+  .cta-text h2 {
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    line-height: 1.2;
   }
 
-  p {
+  .cta-text h2 .accent {
+    color: var(--green-accent-2);
+  }
+
+  .cta-text p {
     font-size: var(--fs-sm);
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.85);
     line-height: 1.8;
     margin-bottom: var(--space-xl);
+    max-width: 30rem;
   }
 
   .contact-btn {
-    display: inline-block;
-    background: var(--green-accent);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--green-accent-2);
     color: var(--white);
-    padding: 12px 28px;
-    border-radius: 50px;
+    padding: 0.75rem 1.9rem;
+    border-radius: 999px;
     font-size: var(--fs-sm);
     font-weight: 600;
     text-decoration: none;
-    transition: all var(--transition-base);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.22);
     width: fit-content;
   }
 
   .contact-btn:hover {
-    background: #43A047;
+    background: #96c684;
     transform: translateY(-1px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
   }
 
   .cta-image {
+    position: relative;
     overflow: hidden;
+    border-radius: var(--radius-xl);
+    height: 100%;
   }
 
   .cta-image img {
@@ -91,21 +104,28 @@
     object-fit: cover;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .cta {
       padding: 0 var(--space-md);
     }
 
     .cta-inner {
       grid-template-columns: 1fr;
+      gap: var(--space-md);
+      height: auto;
     }
 
     .cta-text {
       padding: var(--space-2xl);
+      height: auto;
     }
 
     .cta-image {
-      height: 250px;
+      height: min(62vw, 340px);
+    }
+
+    .cta-image img {
+      object-position: 50% 43%;
     }
   }
 </style>

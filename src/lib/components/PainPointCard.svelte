@@ -90,7 +90,7 @@
   h3 {
     font-family: Arial, sans-serif;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 28.8px;
     color: var(--text-primary);
     margin: 16px 8px 0;

@@ -67,23 +67,25 @@
   }
 
   #how-it-works {
-    padding-bottom: 0 !important;
+    padding-top: clamp(1.25rem, 2vw, 2rem);
+    padding-bottom: 0;
   }
 
   .section-header {
     text-align: center;
-    margin-bottom: clamp(0.85rem, 1.8vw, 1.5rem);
+    margin-bottom: -5%;
+    padding-bottom: 0;
   }
 
   .section-header h2 {
-    font-size: clamp(2.1rem, 3.3vw, 3.05rem);
+    font-size: clamp(2.2rem, 5.2vw, 4rem);
     font-weight: 500;
     color: var(--white);
     line-height: 1.08;
   }
 
   .section-header .subtitle {
-    font-size: clamp(1.95rem, 2.9vw, 2.85rem);
+    font-size: clamp(2.1rem, 5vw, 4rem);
     color: var(--yellow);
     font-weight: 500;
     line-height: 1.1;
@@ -93,17 +95,27 @@
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     gap: clamp(1.8rem, 3vw, 3rem);
-    align-items: start;
+    align-items: center;
   }
 
   .features-col {
     display: flex;
     flex-direction: column;
-    gap: clamp(2.4rem, 3vw, 3.25rem);
+    gap: clamp(2rem, 2.6vw, 2.6rem);
+  }
+
+  .features-col.left {
+    align-self: start;
+    margin-top: 44%;
+  }
+
+  .features-col.right {
+    align-self: end;
+    margin-bottom: 30%;
   }
 
   .feature-item h3 {
-    font-size: clamp(1.15rem, 1.35vw, 1.95rem);
+    font-size: clamp(1.2rem, 1.8vw, 1.4rem);
     font-weight: 500;
     margin-bottom: 0.6rem;
   }
@@ -124,7 +136,8 @@
     width: 100%;
     height: 1px;
     background: linear-gradient(270deg,#d1d09b 0%, #3c3b1b 50%, rgba(255, 255, 255, 0) 100%);
-    margin-top: var(--space-md);
+    margin-top: clamp(2.45rem, 2.9vw, 3rem);
+    margin-bottom: clamp(1.25rem, 1.9vw, 1.85rem);
   }
 
   
@@ -150,7 +163,7 @@
     width: clamp(280px, 33vw, 420px);
     overflow: hidden;
     border-radius: 2.2rem;
-    transform: translateY(20%);
+    transform: translateY(12%);
   }
 
   .phone-mockup::after {
@@ -176,6 +189,10 @@
   }
 
   @media (max-width: 1024px) {
+    .section-header {
+      margin-bottom: 2%;
+    }
+
     .content-layout {
       grid-template-columns: 1fr;
       gap: var(--space-2xl);
@@ -183,6 +200,7 @@
 
     .features-col {
       order: 2;
+      align-self: stretch;
     }
 
     .features-col.left {
@@ -211,7 +229,7 @@
 
   @media (max-width: 768px) {
     .section-header {
-      margin-bottom: var(--space-xl);
+      margin-bottom: 10%;
     }
 
     .section-header h2 {

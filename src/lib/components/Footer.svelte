@@ -89,7 +89,7 @@
             >
             <span>support@jumalink.com</span>
           </li>
-          <li>
+          <!-- <li>
             <svg
               width="16"
               height="16"
@@ -102,7 +102,7 @@
               /></svg
             >
             <span>(+233)</span>
-          </li>
+          </li> -->
           <!-- <li>
             <svg
               width="16"

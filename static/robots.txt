@@ -1,4 +1,5 @@
 User-agent: *
-Allow: /
+Disallow: /app-store
+Disallow: /delete-me
 
 Sitemap: https://jumalink.com/sitemap.xml

@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-  <title>JumaLink — Find Trusted Artisans In Minutes</title>
+  <title>JumaLink — Find Trusted Artisans In Seconds</title>
   <meta
     name="description"
     content="Download the JumaLink app on the Google Play Store and Apple App Store to instantly book verified blue collar workers. Hire plumbers, electricians, and masons right from your phone with transparent pricing."
@@ -26,7 +26,7 @@
   <meta property="og:url" content="https://jumalink.com/" />
   <meta
     property="og:title"
-    content="JumaLink — Find Trusted Artisans In Minutes"
+    content="JumaLink — Find Trusted Artisans In Seconds"
   />
   <meta
     property="og:description"
@@ -39,7 +39,7 @@
   <meta property="twitter:url" content="https://jumalink.com/" />
   <meta
     property="twitter:title"
-    content="JumaLink — Find Trusted Artisans In Minutes"
+    content="JumaLink — Find Trusted Artisans In Seconds"
   />
   <meta
     property="twitter:description"

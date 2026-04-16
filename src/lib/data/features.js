@@ -1,7 +1,7 @@
 export const features = [
   {
     title: 'Find Help Instantly',
-    description: 'Get connected to verified artisans near you in minutes — from plumbers and electricians to mechanics and carpenters.',
+    description: 'Get connected to verified artisans near you in seconds — from plumbers and electricians to mechanics and carpenters.',
     image: 'bubbles'
   },
   {

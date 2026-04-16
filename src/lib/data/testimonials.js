@@ -4,7 +4,7 @@ export const testimonials = [
     role: 'Mother',
     avatar: 'https://i.pravatar.cc/80?img=1',
     rating: 5,
-    text: "JumaLink saved me so much stress! I found a reliable plumber within minutes when my kitchen pipe burst. He arrived the same day and fixed everything perfectly."
+    text: "JumaLink saved me so much stress! I found a reliable plumber within seconds when my kitchen pipe burst. He arrived the same day and fixed everything perfectly."
   },
   {
     name: 'Emmanuel Tetteh',

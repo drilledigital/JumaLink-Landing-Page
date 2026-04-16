@@ -17,7 +17,7 @@
     <h1>
       Find Trusted<br />
       Artisans In<br />
-      <span class="accent">minutes...</span>
+      <span class="accent">seconds...</span>
     </h1>
     <p class="hero-subtitle">
       Book verified plumbers, electricians, mechanics, and more, right from your

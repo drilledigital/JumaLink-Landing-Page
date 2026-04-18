@@ -8,6 +8,26 @@
   import PainPoints from "$lib/components/PainPoints.svelte";
   import HowItWorks from "$lib/components/HowItWorks.svelte";
   import Testimonials from "$lib/components/Testimonials.svelte";
+  import {
+    PLAY_STORE_URL,
+    APP_STORE_URL,
+  } from "$lib/config/appStoreLinks.js";
+
+  const mobileAppJsonLd = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    name: "JumaLink",
+    operatingSystem: "ANDROID, IOS",
+    installUrl: [PLAY_STORE_URL, APP_STORE_URL],
+    applicationCategory: "BusinessApplication",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "GHS",
+    },
+    description:
+      "JumaLink connects you with verified local blue collar workers instantly. Download on Google Play or join the iOS beta via Apple TestFlight to find plumbers, electricians, and mechanics near you in Ghana.",
+  });
 </script>
 
 <svelte:head>
@@ -54,22 +74,7 @@
   <link rel="canonical" href="https://jumalink.com/" />
 
   <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MobileApplication",
-      "name": "JumaLink",
-      "operatingSystem": "ANDROID, IOS",
-      "installUrl": "https://play.google.com/store/apps/details?id=com.jumalink.app",
-      "applicationCategory": "BusinessApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "GHS"
-      },
-      "description": "JumaLink connects you with verified local blue collar workers instantly. Download on the Google Play Store or Apple App Store to find plumbers, electricians, and mechanics near you in Ghana."
-    }
-  </script>
+  {@html `<script type="application/ld+json">${mobileAppJsonLd}</script>`}
 </svelte:head>
 
 <Navbar />

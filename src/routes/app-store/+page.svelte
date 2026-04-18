@@ -5,7 +5,30 @@
     PLAY_STORE_URL,
     APP_STORE_URL,
   } from "$lib/config/appStoreLinks.js";
-  import { getStoreRedirectKind } from "$lib/utils/storeRedirect.js";
+  import {
+    getStoreRedirectKind,
+    getStoreRedirectTarget,
+    buildAppStoreImmediateRedirectScript,
+  } from "$lib/utils/storeRedirect.js";
+
+  const homeUrl = `${base}/`;
+
+  const redirectUrls = {
+    playStoreUrl: PLAY_STORE_URL,
+    appStoreUrl: APP_STORE_URL,
+    homeUrl,
+  };
+
+  /** Runs in head before hydration — important for QR → Safari cold starts */
+  const immediateRedirectScript = buildAppStoreImmediateRedirectScript(
+    redirectUrls,
+  );
+  const immediateRedirectMarkup =
+    `<script type="text/javascript">${immediateRedirectScript}<\/script>`;
+
+  const appleDestinationLabel = APP_STORE_URL.includes("testflight.apple.com")
+    ? "Apple TestFlight"
+    : "the App Store";
 
   let status = $state("Redirecting…");
 
@@ -13,46 +36,39 @@
     const kind = getStoreRedirectKind(navigator.userAgent, {
       maxTouchPoints: navigator.maxTouchPoints,
     });
+    const target = getStoreRedirectTarget(kind, redirectUrls);
 
     if (kind === "home") {
       status = "Taking you to the home page…";
-      window.location.replace(`${base}/`);
-      return;
-    }
-
-    if (kind === "play") {
+    } else if (kind === "play") {
       status = "Opening Google Play…";
-      window.location.replace(PLAY_STORE_URL);
-      return;
+    } else {
+      status =
+        appleDestinationLabel === "Apple TestFlight"
+          ? "Opening Apple TestFlight…"
+          : "Opening the App Store…";
     }
 
-    // appstore
-    if (APP_STORE_URL) {
-      status = "Opening the App Store…";
-      window.location.replace(APP_STORE_URL);
-      return;
-    }
-
-    status = "Taking you to the home page…";
-    window.location.replace(`${base}/`);
+    window.location.replace(target);
   });
 </script>
 
 <svelte:head>
   <title>Get the app — JumaLink</title>
   <meta name="robots" content="noindex, nofollow" />
+  {@html immediateRedirectMarkup}
 </svelte:head>
 
 <div class="app-store-fallback" role="status" aria-live="polite">
   <p>{status}</p>
   <noscript>
     <p>
-      JavaScript is required to send you to the right store. You can open
+      Choose your store (device detection needs JavaScript):
       <a href={PLAY_STORE_URL}>Google Play</a>
-      {#if APP_STORE_URL}
-        or <a href={APP_STORE_URL}>the App Store</a>
-      {/if}
-      , or <a href="{base}/">return home</a>.
+      ·
+      <a href={APP_STORE_URL}>{appleDestinationLabel}</a>
+      ·
+      <a href={homeUrl}>Home</a>
     </p>
   </noscript>
 </div>

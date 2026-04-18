@@ -1,9 +1,13 @@
+<script>
+  import { PLAY_STORE_URL } from "$lib/config/appStoreLinks.js";
+</script>
+
 <a
-    href="https://play.google.com/store/apps/details?id=com.jumalink.app"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="play-store-link"
-    aria-label="Get JumaLink on Google Play"
+  href={PLAY_STORE_URL}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="play-store-link"
+  aria-label="Get JumaLink on Google Play"
 >
 <svg
     width="200"

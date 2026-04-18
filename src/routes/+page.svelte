@@ -52,7 +52,10 @@
     property="og:description"
     content="Download the JumaLink app on the Google Play Store and App Store to instantly book verified blue collar workers in Ghana."
   />
-  <meta property="og:image" content="https://jumalink.com/social-preview.png" />
+  <meta
+    property="og:image"
+    content="https://jumalink.com/social-preview.avif"
+  />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
@@ -67,7 +70,7 @@
   />
   <meta
     property="twitter:image"
-    content="https://jumalink.com/social-preview.png"
+    content="https://jumalink.com/social-preview.avif"
   />
 
   <!-- Canonical URL -->

@@ -1,5 +1,5 @@
 <script>
-  import ctaWorker from "$lib/assets/CTA-worker.jpg";
+  import ctaWorker from "$lib/assets/CTA-worker.avif";
 </script>
 
 <section class="cta" id="contact">

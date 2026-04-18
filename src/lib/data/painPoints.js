@@ -1,6 +1,6 @@
-import hardToFindWorkers from '../assets/hard_to_find_workers.jpeg?enhanced';
-import unreliableService from '../assets/unreliable_service.jpeg?enhanced';
-import noEasyWay from '../assets/no_easy_way.jpeg?enhanced';
+import hardToFindWorkers from '../assets/hard_to_find_workers.avif?enhanced';
+import unreliableService from '../assets/unreliable_service.avif?enhanced';
+import noEasyWay from '../assets/no_easy_way.avif?enhanced';
 
 export const painPoints = [
   {

@@ -1,5 +1,5 @@
 <script>
-  import heroImage from "$lib/assets/hero.jpg";
+  import heroImage from "$lib/assets/hero.avif";
   import AppStoreButton from "./AppStoreButton.svelte";
   import PlayStoreButton from "./PlayStoreButton.svelte";
 </script>

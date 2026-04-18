@@ -1,5 +1,5 @@
 <script>
-  import searchResultsImg from "$lib/assets/search-results.jpeg";
+  import searchResultsImg from "$lib/assets/search-results.avif";
 
   /** @type {{ title: string, description: string, image: string }} */
   let { title, description, image } = $props();

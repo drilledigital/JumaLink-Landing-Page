@@ -121,8 +121,8 @@
     line-height: 1.5;
     max-width: 580px;
     letter-spacing: 0%;
-    font-family: Inter;
-    font-style: Regular;
+    font-family: var(--font-family);
+    font-style: normal;
     font-size: var(--fs-xl);
     color: rgba(255, 255, 255);
     margin-bottom: var(--space-3xl);
@@ -134,44 +134,6 @@
     flex-wrap: wrap;
   }
 
-  .store-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-md);
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(8px);
-    border: 1.5px solid rgba(255, 255, 255, 0.35);
-    color: var(--white);
-    padding: 12px 28px;
-    border-radius: var(--radius-xl);
-    text-decoration: none;
-    transition: all var(--transition-base);
-  }
-
-  .store-btn:hover {
-    background: rgba(255, 255, 255, 0.22);
-    border-color: rgba(255, 255, 255, 0.55);
-  }
-
-  .store-icon {
-    flex-shrink: 0;
-  }
-
-  .store-text {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .store-label {
-    font-size: var(--fs-xs);
-    opacity: 0.9;
-  }
-
-  .store-name {
-    font-size: var(--fs-base);
-    font-weight: 600;
-  }
-
   @media (max-width: 768px) {
     .hero {
       min-height: 80vh;
@@ -181,8 +143,5 @@
       padding-top: calc(var(--nav-height) + 40px);
     }
 
-    .store-btn {
-      padding: 10px 20px;
-    }
   }
 </style>

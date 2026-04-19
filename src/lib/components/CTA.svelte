@@ -12,7 +12,7 @@
         so you can hire with confidence knowing your project
         will be handled professionally and on time.
       </p>
-      <a href="#contact" class="contact-btn">Contact Us</a>
+      <a href="mailto:support@jumalink.com" class="contact-btn">Contact Us</a>
     </div>
     <div class="cta-image">
       <img

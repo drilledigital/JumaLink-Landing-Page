@@ -45,7 +45,7 @@
       {/each}
     </ul>
 
-    <a href="#contact" class="cta-btn">
+    <a href="/app-store" class="cta-btn">
       Download Now
       <svg
         width="16"

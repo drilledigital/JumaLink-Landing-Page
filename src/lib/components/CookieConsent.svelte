@@ -1,27 +1,33 @@
 <script>
-  import { onMount } from 'svelte';
-  import { getReferral, pushReferralToAnalytics } from '$lib/utils/referral.js';
+  import { onMount } from "svelte";
+  import { getReferral, pushReferralToAnalytics } from "$lib/utils/referral.js";
 
   let showBanner = $state(false);
 
   // Function to dynamically inject analytics scripts
   function injectAnalytics() {
     // 1. Inject Microsoft Clarity
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];
-        if(y && y.parentNode) y.parentNode.insertBefore(t,y);
-        else document.head.appendChild(t);
+    (function (c, l, a, r, i, t, y) {
+      c[a] =
+        c[a] ||
+        function () {
+          (c[a].q = c[a].q || []).push(arguments);
+        };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      if (y && y.parentNode) y.parentNode.insertBefore(t, y);
+      else document.head.appendChild(t);
     })(window, document, "clarity", "script", "tosvjz9v3f");
 
     // 2. Inject Google Analytics (gtag)
-    const gtagScript = document.createElement('script');
+    const gtagScript = document.createElement("script");
     gtagScript.async = true;
     gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-94PH46K68C";
     document.head.appendChild(gtagScript);
 
-    const gtagInline = document.createElement('script');
+    const gtagInline = document.createElement("script");
     gtagInline.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -32,20 +38,20 @@
   }
 
   onMount(() => {
-    const consent = localStorage.getItem('juma_cookie_consent');
-    if (consent === 'granted') {
+    const consent = localStorage.getItem("juma_cookie_consent");
+    if (consent === "granted") {
       injectAnalytics();
       // Push referral tag to analytics if we have one
       const ref = getReferral();
       if (ref) pushReferralToAnalytics(ref);
-    } else if (consent !== 'denied') {
+    } else if (consent !== "denied") {
       // Show banner if no choice has been made
       showBanner = true;
     }
   });
 
   function acceptCookies() {
-    localStorage.setItem('juma_cookie_consent', 'granted');
+    localStorage.setItem("juma_cookie_consent", "granted");
     injectAnalytics();
     // Push referral tag to newly-injected analytics
     const ref = getReferral();
@@ -57,17 +63,29 @@
   }
 
   function declineCookies() {
-    localStorage.setItem('juma_cookie_consent', 'denied');
+    localStorage.setItem("juma_cookie_consent", "denied");
     showBanner = false;
   }
 </script>
 
 {#if showBanner}
-  <div class="cookie-banner" role="dialog" aria-live="polite" aria-labelledby="cookie-heading">
+  <div
+    class="cookie-banner"
+    role="dialog"
+    aria-live="polite"
+    aria-labelledby="cookie-heading"
+  >
     <div class="cookie-content">
       <div class="cookie-text">
         <h4 id="cookie-heading">We value your privacy</h4>
-        <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.</p>
+        <p>
+          We use cookies to analyze site traffic and understand how visitors use
+          our site to improve the services we provide. By clicking "Accept All",
+          you consent to our use of cookies. Learn more in our <a
+            href="/privacy"
+            class="privacy-link">Privacy Policy</a
+          >.
+        </p>
       </div>
       <div class="cookie-actions">
         <button class="btn-decline" onclick={declineCookies}>Decline</button>
@@ -88,7 +106,9 @@
     background: var(--white);
     padding: var(--space-lg) var(--space-xl);
     border-radius: var(--radius-lg);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05);
+    box-shadow:
+      0 10px 40px rgba(0, 0, 0, 0.15),
+      0 0 0 1px rgba(0, 0, 0, 0.05);
     z-index: 9999;
     animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
@@ -112,6 +132,17 @@
     color: var(--text-secondary);
     line-height: 1.5;
     margin: 0;
+  }
+
+  .privacy-link {
+    color: var(--green-primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color var(--transition-fast);
+  }
+
+  .privacy-link:hover {
+    color: var(--green-dark);
   }
 
   .cookie-actions {

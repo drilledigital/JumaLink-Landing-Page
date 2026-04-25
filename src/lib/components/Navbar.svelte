@@ -1,4 +1,6 @@
 <script>
+  import { base } from "$app/paths";
+
   let mobileMenuOpen = $state(false);
 
   let previousBodyOverflow = "";
@@ -12,11 +14,11 @@
   }
 
   const navLinks = [
-    { label: "Home", href: "#home" },
-    { label: "How it Works", href: "#how-it-works" },
-    // { label: "Services", href: "#services" },
-    { label: "Contact", href: "#contact" },
-    { label: "Privacy Policy", href: "#footer" },
+    { label: "Home", href: `${base}/#home` },
+    { label: "How it Works", href: `${base}/#how-it-works` },
+    // { label: "Services", href: `${base}/#services` },
+    { label: "Contact", href: `${base}/#contact` },
+    { label: "Privacy Policy", href: `${base}/#footer` },
   ];
 
   $effect(() => {
@@ -33,7 +35,7 @@
 
 <nav class="navbar" id="navbar">
   <div class="nav-container">
-    <a href="#home" class="logo" onclick={closeMenu}>
+    <a href="{base}/#home" class="logo" onclick={closeMenu}>
       <span class="logo-text">JumaLink</span>
     </a>
 
@@ -45,7 +47,7 @@
       {/each}
     </ul>
 
-    <a href="/app-store" class="cta-btn">
+    <a href="{base}/app-store" class="cta-btn">
       Download Now
       <svg
         width="16"

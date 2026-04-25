@@ -1,4 +1,6 @@
 <script>
+  import { base } from "$app/paths";
+
   let email = $state("");
 
   function handleSubscribe(e) {
@@ -44,19 +46,19 @@
           <div class="link-col">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="#home" class="active-link">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#how-it-works">How it Works</a></li>
-              <li><a href="#waitlist">Join Waitlist</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="{base}/#home" class="active-link">Home</a></li>
+              <li><a href="{base}/#about">About</a></li>
+              <li><a href="{base}/#how-it-works">How it Works</a></li>
+              <li><a href="{base}/#waitlist">Join Waitlist</a></li>
+              <li><a href="{base}/#contact">Contact</a></li>
             </ul>
           </div>
 
           <div class="link-col">
             <h4>Hire A Worker</h4>
             <ul>
-              <li><a href="#channel">Join the channel</a></li>
-              <li><a href="#call">Book A Call</a></li>
+              <li><a href="{base}/#channel">Join the channel</a></li>
+              <li><a href="{base}/#call">Book A Call</a></li>
             </ul>
           </div>
         </div>

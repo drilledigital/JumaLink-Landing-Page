@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import { getReferral, pushReferralToAnalytics } from '$lib/utils/referral.js';
 
   let showBanner = $state(false);
 
@@ -34,6 +35,9 @@
     const consent = localStorage.getItem('juma_cookie_consent');
     if (consent === 'granted') {
       injectAnalytics();
+      // Push referral tag to analytics if we have one
+      const ref = getReferral();
+      if (ref) pushReferralToAnalytics(ref);
     } else if (consent !== 'denied') {
       // Show banner if no choice has been made
       showBanner = true;
@@ -43,6 +47,12 @@
   function acceptCookies() {
     localStorage.setItem('juma_cookie_consent', 'granted');
     injectAnalytics();
+    // Push referral tag to newly-injected analytics
+    const ref = getReferral();
+    if (ref) {
+      // Small delay to let GA/Clarity scripts initialise
+      setTimeout(() => pushReferralToAnalytics(ref), 500);
+    }
     showBanner = false;
   }
 

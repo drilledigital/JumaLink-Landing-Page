@@ -1,9 +1,12 @@
 <script>
   import { APP_STORE_URL } from "$lib/config/appStoreLinks.js";
+  import { tagStoreUrl } from "$lib/utils/referral.js";
+
+  const href = $derived(tagStoreUrl(APP_STORE_URL));
 </script>
 
 <a
-  href={APP_STORE_URL}
+  href={href}
   target="_blank"
   rel="noopener noreferrer"
   class="app-store-link"

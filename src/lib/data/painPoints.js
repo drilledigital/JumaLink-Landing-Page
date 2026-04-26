@@ -1,5 +1,5 @@
 import hardToFindWorkers from '../assets/hard_to_find_workers.avif?enhanced';
-import unreliableService from '../assets/unreliable_service.avif?enhanced';
+import unreliableService from '../assets/female-plumber-working.avif';
 import noEasyWay from '../assets/no_easy_way.avif?enhanced';
 
 export const painPoints = [
@@ -19,6 +19,6 @@ export const painPoints = [
     image: noEasyWay,
     title: 'No Easy Way to Compare or Trust',
     description: 'There\'s no clear way to know who is qualified, reliable, or worth your money.',
-    alt: 'Frustrated man staring at his smartphone and rubbing his temple, unable to find the help he needs'
+    alt: 'Frustrated man staring at his smartphone and rubbing his temple'
   }
 ];

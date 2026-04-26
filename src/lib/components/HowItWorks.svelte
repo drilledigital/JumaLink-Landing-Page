@@ -1,5 +1,5 @@
 <script>
-  import howItWorksImg from "$lib/assets/how-jumalink-works.avif";
+  import howItWorksImg from "$lib/assets/jumalink-electrician-screenshot.avif";
 </script>
 
 <section class="how-it-works section-padding" id="how-it-works">

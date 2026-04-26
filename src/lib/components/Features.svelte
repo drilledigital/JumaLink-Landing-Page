@@ -10,7 +10,7 @@
 
   import jumaLinkQrImg from "$lib/assets/JumaLink-1024.svg";
   import { features, whyUsePoints } from "$lib/data/features.js";
-  import femalePlumberImg from "$lib/assets/female-plumber-working.avif";
+  import femalePlumberImg from "$lib/assets/female-plumber.avif";
 
   const whyUseIcons = [
     DollarSign,

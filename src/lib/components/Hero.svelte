@@ -1,5 +1,5 @@
 <script>
-  import heroImage from "$lib/assets/hero.avif";
+  import heroImage from "$lib/assets/female-carpenter.avif";
   import AppStoreButton from "./AppStoreButton.svelte";
   import PlayStoreButton from "./PlayStoreButton.svelte";
 </script>
@@ -21,8 +21,8 @@
     </h1>
     <p class="hero-subtitle">
       Book verified plumbers, electricians, mechanics, carpenters, painters,
-      welders, and more — right from your phone. JumaLink connects you to
-      nearby skilled workers with transparent prices, reviews, and fast response.
+      welders, and more — right from your phone. JumaLink connects you to nearby
+      skilled workers with transparent prices, reviews, and fast response.
     </p>
     <div class="store-buttons">
       <AppStoreButton />
@@ -142,6 +142,5 @@
     .hero-content {
       padding-top: calc(var(--nav-height) + 40px);
     }
-
   }
 </style>

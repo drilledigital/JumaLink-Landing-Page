@@ -2,11 +2,34 @@
   import { base } from "$app/paths";
 
   let email = $state("");
+  let submitStatus = $state(""); // "success" | "error" | ""
 
-  function handleSubscribe(e) {
+  const GOOGLE_FORM_URL =
+    "https://docs.google.com/forms/d/e/1FAIpQLSezVrOb4fVFvmavwfVDXT0BJ0dJwC2S5BhJImJsHjkl8_o1zA/formResponse";
+  const EMAIL_ENTRY_ID = "entry.1537794986";
+
+  async function handleSubscribe(e) {
     e.preventDefault();
-    // Placeholder for subscribe logic
-    email = "";
+    submitStatus = "";
+
+    const formData = new URLSearchParams();
+    formData.append(EMAIL_ENTRY_ID, email);
+
+    try {
+      await fetch(GOOGLE_FORM_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: formData.toString(),
+      });
+      // no-cors means we can't read the response, but the submission goes through
+      submitStatus = "success";
+      email = "";
+      setTimeout(() => (submitStatus = ""), 4000);
+    } catch {
+      submitStatus = "error";
+      setTimeout(() => (submitStatus = ""), 4000);
+    }
   }
 </script>
 
@@ -76,6 +99,11 @@
           />
           <button type="submit" class="subscribe-btn">Subscribe</button>
         </form>
+        {#if submitStatus === "success"}
+          <p class="subscribe-feedback success">Thanks for subscribing!</p>
+        {:else if submitStatus === "error"}
+          <p class="subscribe-feedback error">Something went wrong. Please try again.</p>
+        {/if}
         <div class="social-icons">
           <a
             href="https://web.facebook.com/JumalinkGhana"
@@ -214,6 +242,25 @@
 
   .subscribe-btn:hover {
     background: var(--green-dark);
+  }
+
+  .subscribe-feedback {
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .subscribe-feedback.success {
+    color: var(--green-accent);
+  }
+
+  .subscribe-feedback.error {
+    color: #e74c3c;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
   .social-icons {

@@ -8,10 +8,7 @@
   import PainPoints from "$lib/components/PainPoints.svelte";
   import HowItWorks from "$lib/components/HowItWorks.svelte";
   import Testimonials from "$lib/components/Testimonials.svelte";
-  import {
-    PLAY_STORE_URL,
-    APP_STORE_URL,
-  } from "$lib/config/appStoreLinks.js";
+  import { PLAY_STORE_URL, APP_STORE_URL } from "$lib/config/appStoreLinks.js";
 
   const mobileAppJsonLd = JSON.stringify({
     "@context": "https://schema.org",
@@ -26,7 +23,7 @@
       priceCurrency: "GHS",
     },
     description:
-      "JumaLink connects you with verified skilled workers in Ghana — hire plumbers, electricians, mechanics, carpenters, masons, welders, painters, tailors, hairdressers, and more instantly. Download on Google Play or join the iOS beta via Apple TestFlight.",
+      "JumaLink connects you with skilled workers in Ghana. Hire plumbers, electricians, mechanics, carpenters, masons, welders, painters, tailors, hairdressers, and more instantly. Download on Google Play or the iOS App Store.",
   });
 </script>
 

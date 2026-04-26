@@ -61,7 +61,6 @@
             <ul>
               <li><a href="{base}/privacy">Privacy Policy</a></li>
               <li><a href="{base}/terms">Terms of Service</a></li>
-              <li><a href="{base}/delete-me">Delete Account</a></li>
             </ul>
           </div>
 
@@ -102,7 +101,9 @@
         {#if submitStatus === "success"}
           <p class="subscribe-feedback success">Thanks for subscribing!</p>
         {:else if submitStatus === "error"}
-          <p class="subscribe-feedback error">Something went wrong. Please try again.</p>
+          <p class="subscribe-feedback error">
+            Something went wrong. Please try again.
+          </p>
         {/if}
         <div class="social-icons">
           <a
@@ -259,8 +260,14 @@
   }
 
   @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-4px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .social-icons {

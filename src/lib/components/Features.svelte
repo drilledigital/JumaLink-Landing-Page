@@ -8,7 +8,7 @@
   import TwentyFourHourSign from "./24HourSign.svelte";
   import RightArrowSign from "./RightArrowSign.svelte";
 
-  import jumaLinkQrImg from "$lib/assets/JumaLink-1024.svg";
+  import jumaLinkQrImg from "$lib/assets/jumalink-app-qr-code.avif";
   import { features, whyUsePoints } from "$lib/data/features.js";
   import femalePlumberImg from "$lib/assets/female-plumber.avif";
 

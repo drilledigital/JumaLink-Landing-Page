@@ -266,6 +266,7 @@
 
     .why-content {
       min-height: 350px;
+      margin-top: 100px;
       padding: var(--space-lg) var(--space-md) 0;
     }
 
@@ -275,6 +276,7 @@
 
     .why-list li {
       font-size: 1.02rem;
+      max-width: 85%;
     }
 
     .why-left {
@@ -283,7 +285,7 @@
 
     .why-worker-img {
       width: clamp(200px, 27vw, 260px);
-      height: 500px;
+      height: 450px;
       position: relative;
       bottom: -10.5px;
     }

@@ -16,6 +16,7 @@
           image={point.image}
           title={point.title}
           description={point.description}
+          alt={point.alt}
         />
       {/each}
     </div>

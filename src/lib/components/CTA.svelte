@@ -7,17 +7,17 @@
     <div class="cta-text">
       <h2>Need an Artisan? <span class="accent">Hire One Now!</span></h2>
       <p>
-        JumaLink makes it easy to find the right artisan for your needs.
-        Every worker on our platform is verified, reliable, and skilled,
-        so you can hire with confidence knowing your project
-        will be handled professionally and on time.
+        Need something built, repaired, or fixed? JumaLink makes it easy to find
+        the right skilled worker for the job. Artisans on our platform are
+        verified and reliable. Hire with confidence knowing your project will be
+        handled professionally.
       </p>
       <a href="mailto:support@jumalink.com" class="contact-btn">Contact Us</a>
     </div>
     <div class="cta-image">
       <img
         src={ctaWorker}
-        alt="Artisan at work"
+        alt="Verified artisan completing a repair job booked through JumaLink"
         loading="lazy"
       />
     </div>
@@ -80,7 +80,10 @@
     font-size: var(--fs-sm);
     font-weight: 600;
     text-decoration: none;
-    transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+    transition:
+      transform var(--transition-fast),
+      box-shadow var(--transition-fast),
+      background var(--transition-fast);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.22);
     width: fit-content;
   }

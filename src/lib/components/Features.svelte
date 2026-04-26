@@ -59,7 +59,12 @@
 
         <div class="why-right">
           <div class="qr-placeholder">
-            <img src={jumaLinkQrImg} alt="JumaLink QR code" class="qr-image" loading="lazy" />
+            <img
+              src={jumaLinkQrImg}
+              alt="JumaLink QR code"
+              class="qr-image"
+              loading="lazy"
+            />
           </div>
 
           <div class="qr-icon-container">
@@ -71,7 +76,7 @@
         <div class="why-center">
           <enhanced:img
             src={femalePlumberImg}
-            alt="Female artisan worker"
+            alt="Smiling female plumber in blue denim overalls and a tool belt, holding a tool"
             loading="lazy"
             class="why-worker-img"
           />

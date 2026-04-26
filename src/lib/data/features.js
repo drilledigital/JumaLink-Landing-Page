@@ -1,7 +1,7 @@
 export const features = [
   {
     title: 'Find Help Instantly',
-    description: 'Get connected to verified artisans near you in seconds — from plumbers and electricians to mechanics and carpenters.',
+    description: 'Get connected to verified artisans near you in seconds, from plumbers, electricians, and mechanics to carpenters, welders, painters, and AC technicians.',
     image: 'bubbles'
   },
   {
@@ -18,7 +18,7 @@ export const features = [
 
 export const whyUsePoints = [
   { icon: 'RightArrowSign', text: 'No middlemen or delays' },
-  { icon: '24HourSign', text: 'Access to skilled local workers' },
+  { icon: '24HourSign', text: 'Access to skilled workers, from masons to hairdressers' },
   { icon: 'RightArrowSign', text: 'Faster Service Delivery' },
   { icon: '24HourSign', text: 'Supports local employment' }
 ];

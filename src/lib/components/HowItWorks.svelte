@@ -14,7 +14,10 @@
       <div class="features-col left">
         <div class="feature-item">
           <h3>Request a Service in <span class="accent">Seconds</span></h3>
-          <p>Find and request nearby artisans instantly. No more calling around or waiting endlessly — get connected in just a few taps.</p>
+          <p>
+            Find and request nearby artisans instantly. No more calling around
+            or waiting endlessly; get connected in just a few taps.
+          </p>
           <div class="progress-bar">
             <div class="progress-fill" style="width: 75%"></div>
             <span class="progress-dot"></span>
@@ -23,7 +26,11 @@
 
         <div class="feature-item">
           <h3>Real-time availability</h3>
-          <p>This feature keeps you informed about your financial activities, making it easier to track and manage your spending in real time.</p>
+          <p>
+            See which artisans are available right now, whether you need a
+            plumber for an emergency fix, a painter for your new build, or an
+            electrician to repair your air conditioner.
+          </p>
         </div>
       </div>
 
@@ -31,7 +38,7 @@
       <div class="phone-mockup">
         <enhanced:img
           src={howItWorksImg}
-          alt="JumaLink artisan profile screen"
+          alt="JumaLink app displaying an electrician profile with services like wiring installation, auto mechanic, and a Book Now button at the bottom of the screen"
           class="phone-shot"
           loading="lazy"
           sizes="(max-width: 1024px) 320px, 360px"
@@ -42,7 +49,10 @@
       <div class="features-col right">
         <div class="feature-item">
           <h3>Wide Range of Services</h3>
-          <p>The app provides users with a wide range of financial services and tools, including account management and budgeting.</p>
+          <p>
+            From electricians and auto mechanics to tailors, hairdressers, and
+            welders, find the right skilled worker for any job, all in one app.
+          </p>
           <div class="progress-bar">
             <div class="progress-fill" style="width: 60%"></div>
             <span class="progress-dot"></span>
@@ -51,7 +61,10 @@
 
         <div class="feature-item">
           <h3>Verified Professionals</h3>
-          <p>Every artisan is vetted to ensure reliability, professionalism, and quality service you can depend on.</p>
+          <p>
+            Artisans are vetted to ensure reliability, professionalism, and
+            quality service you can depend on.
+          </p>
         </div>
       </div>
     </div>
@@ -136,12 +149,15 @@
     position: relative;
     width: 100%;
     height: 1px;
-    background: linear-gradient(270deg,#d1d09b 0%, #3c3b1b 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+      270deg,
+      #d1d09b 0%,
+      #3c3b1b 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
     margin-top: clamp(2.45rem, 2.9vw, 3rem);
     margin-bottom: clamp(1.25rem, 1.9vw, 1.85rem);
   }
-
-  
 
   .progress-fill {
     display: none;
@@ -248,6 +264,5 @@
     .phone-mockup {
       width: min(78vw, 330px);
     }
-
   }
 </style>

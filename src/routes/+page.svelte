@@ -26,7 +26,7 @@
       priceCurrency: "GHS",
     },
     description:
-      "JumaLink connects you with verified local blue collar workers instantly. Download on Google Play or join the iOS beta via Apple TestFlight to find plumbers, electricians, and mechanics near you in Ghana.",
+      "JumaLink connects you with verified skilled workers in Ghana — hire plumbers, electricians, mechanics, carpenters, masons, welders, painters, tailors, hairdressers, and more instantly. Download on Google Play or join the iOS beta via Apple TestFlight.",
   });
 </script>
 
@@ -34,11 +34,11 @@
   <title>JumaLink — Find Trusted Artisans In Seconds</title>
   <meta
     name="description"
-    content="Download the JumaLink app on the Google Play Store and Apple App Store to instantly book verified blue collar workers. Hire plumbers, electricians, and masons right from your phone with transparent pricing."
+    content="Find and hire verified plumbers, electricians, mechanics, carpenters, painters, welders, tailors, and more in Ghana. Download JumaLink to book skilled workers instantly with transparent pricing."
   />
   <meta
     name="keywords"
-    content="artisans, blue collar workers, plumbers, electricians, mechanics, JumaLink, hire workers, Ghana, local services, trusted professionals, Google Play Store app, Apple App Store download"
+    content="artisans, plumber, electrician, auto electrician, mechanic, auto mechanic, mason, carpenter, tailor, hairdresser, welder, painter, AC repair, air conditioner, ceiling fan, repairer, fix, build, skilled worker, JumaLink, hire workers, Ghana, local services, trusted professionals"
   />
 
   <!-- Open Graph / Facebook -->
@@ -50,7 +50,7 @@
   />
   <meta
     property="og:description"
-    content="Download the JumaLink app on the Google Play Store and App Store to instantly book verified blue collar workers in Ghana."
+    content="Hire verified plumbers, electricians, mechanics, carpenters, painters, and more in Ghana. Book skilled workers instantly with JumaLink."
   />
   <meta
     property="og:image"
@@ -66,7 +66,7 @@
   />
   <meta
     property="twitter:description"
-    content="Instantly book verified blue collar workers right from your phone."
+    content="Hire verified plumbers, electricians, mechanics, carpenters, painters, welders, and more in Ghana — right from your phone."
   />
   <meta
     property="twitter:image"

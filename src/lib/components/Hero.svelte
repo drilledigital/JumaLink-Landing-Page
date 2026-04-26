@@ -7,7 +7,7 @@
 <section class="hero" id="home">
   <enhanced:img
     src={heroImage}
-    alt="Trusted artisans ready to help"
+    alt="Smiling female carpenter with arms crossed in a woodworking shop surrounded by stacks of timber"
     sizes="min(1280px, 100vw)"
     fetchpriority="high"
     class="hero-image"
@@ -20,9 +20,9 @@
       <span class="accent">seconds...</span>
     </h1>
     <p class="hero-subtitle">
-      Book verified plumbers, electricians, mechanics, and more, right from your
-      phone. JumaLink connects you to nearby pros, with transparent prices,
-      reviews, and fast response.
+      Book verified plumbers, electricians, mechanics, carpenters, painters,
+      welders, and more — right from your phone. JumaLink connects you to
+      nearby skilled workers with transparent prices, reviews, and fast response.
     </p>
     <div class="store-buttons">
       <AppStoreButton />

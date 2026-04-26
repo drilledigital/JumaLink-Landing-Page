@@ -1,13 +1,13 @@
 <script>
-  /** @type {{ image: string, title: string, description: string }} */
-  let { image, title, description } = $props();
+  /** @type {{ image: string, title: string, description: string, alt?: string }} */
+  let { image, title, description, alt } = $props();
 </script>
 
 <div class="pain-card">
   <div class="card-image-wrapper">
     <enhanced:img
       src={image}
-      alt={title}
+      alt={alt || title}
       sizes="(min-width: 1024px) 302px, 90vw"
       loading="lazy"
       class="pain-card-img"

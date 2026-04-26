@@ -26,32 +26,32 @@
         <!-- Row 1: 3 images across the top -->
         <img
           src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop"
-          alt="Artisan 1"
+          alt="Verified plumber profile"
           loading="lazy"
           class="collage-img c1"
         />
         <img
           src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop"
-          alt="Artisan 2"
+          alt="Verified electrician profile"
           loading="lazy"
           class="collage-img c2"
         />
         <img
           src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop"
-          alt="Artisan 3"
+          alt="Verified carpenter profile"
           loading="lazy"
           class="collage-img c3"
         />
         <!-- Row 2: 2 images nestled in the gaps below -->
         <img
           src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop"
-          alt="Artisan 4"
+          alt="Verified painter profile"
           loading="lazy"
           class="collage-img c4"
         />
         <img
           src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop"
-          alt="Artisan 5"
+          alt="Verified air conditioner technician profile"
           loading="lazy"
           class="collage-img c5"
         />
@@ -60,7 +60,8 @@
       <div class="app-screenshot">
         <enhanced:img
           src={searchResultsImg}
-          alt="JumaLink search results showing verified artisans"
+          alt="JumaLink search results for 'electrician' showing verified and top-rated artisan profiles.
+          The search results shows the profile of two electricians."
           sizes="(min-width: 1024px) 340px, 90vw"
           loading="lazy"
           class="screenshot-img"
@@ -154,7 +155,7 @@
   .b5 {
     background: #c8c2e6;
     bottom: 25px;
-    left:0;
+    left: 0;
     transform: rotate(-15deg);
     color: #000;
   }
@@ -222,7 +223,7 @@
   /* App screenshot */
   .app-screenshot {
     width: 90%;
-    height: 300px;
+    height: 320px;
     display: flex;
     justify-content: center;
     align-items: flex-start;

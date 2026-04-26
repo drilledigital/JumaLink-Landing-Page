@@ -50,18 +50,18 @@
             <h4>Quick Links</h4>
             <ul>
               <li><a href="{base}/#home" class="active-link">Home</a></li>
-              <li><a href="{base}/#about">About</a></li>
               <li><a href="{base}/#how-it-works">How it Works</a></li>
-              <li><a href="{base}/#waitlist">Join Waitlist</a></li>
+              <li><a href="{base}/#features">Features</a></li>
               <li><a href="{base}/#contact">Contact</a></li>
             </ul>
           </div>
 
           <div class="link-col">
-            <h4>Hire A Worker</h4>
+            <h4>Legal</h4>
             <ul>
-              <li><a href="{base}/#channel">Join the channel</a></li>
-              <li><a href="{base}/#call">Book A Call</a></li>
+              <li><a href="{base}/privacy">Privacy Policy</a></li>
+              <li><a href="{base}/terms">Terms of Service</a></li>
+              <li><a href="{base}/delete-me">Delete Account</a></li>
             </ul>
           </div>
 

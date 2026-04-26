@@ -16,9 +16,8 @@
   const navLinks = [
     { label: "Home", href: `${base}/#home` },
     { label: "How it Works", href: `${base}/#how-it-works` },
-    // { label: "Services", href: `${base}/#services` },
+    { label: "Features", href: `${base}/#features` },
     { label: "Contact", href: `${base}/#contact` },
-    { label: "Privacy Policy", href: `${base}/#footer` },
   ];
 
   $effect(() => {

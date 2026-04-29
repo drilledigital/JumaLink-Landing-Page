@@ -19,68 +19,145 @@
     <h1>JumaLink Terms of Service</h1>
     <p class="lede">Last Updated: April 2026</p>
     <p>
-      Welcome to JumaLink! These Terms of Service ("Terms") govern your access to and use of the JumaLink platform, including our mobile application and website (collectively, the "Platform"). By accessing or using the Platform, you agree to be bound by these Terms.
+      Welcome to JumaLink! These Terms of Service ("Terms") govern your access
+      to and use of the JumaLink platform, including our mobile application and
+      website (collectively, the "Platform"). By accessing or using the
+      Platform, you agree to be bound by these Terms.
     </p>
 
     <section>
       <h2>1. Acceptance of Terms & Eligibility</h2>
-      <p>By creating an account or using JumaLink, you confirm that you are at least 18 years of age and possess the legal authority to enter into these Terms. If you do not agree to these Terms, you must not use our Platform.</p>
+      <p>
+        By creating an account or using JumaLink, you confirm that you are at
+        least 18 years of age and possess the legal authority to enter into
+        these Terms. If you do not agree to these Terms, you must not use our
+        Platform.
+      </p>
     </section>
 
     <section>
       <h2>2. Description of Service</h2>
-      <p>JumaLink is an intermediary digital marketplace designed to connect individuals seeking services ("Customers") with independent professionals ("Artisans"). We provide the technology to facilitate these connections but do not perform the services ourselves.</p>
+      <p>
+        JumaLink is an intermediary digital marketplace designed to connect
+        individuals seeking services ("Customers") with independent
+        professionals ("Artisans"). We provide the technology to facilitate
+        these connections but do not perform the services ourselves.
+      </p>
     </section>
 
     <section>
       <h2>3. Artisan Independence & Lack of Guarantees</h2>
-      <p><strong>Independent Contractors:</strong> All Artisans on the JumaLink Platform are independent contractors and third-party providers. They are not employees, agents, or representatives of JumaLink.</p>
-      <p><strong>Vetting and Guarantees:</strong> While JumaLink makes reasonable efforts to acquire and vet Artisans, we cannot and do not fully ensure, warrant, or guarantee the quality or suitability of the services they provide. You engage with Artisans at your own risk.</p>
+      <p>
+        <strong>Independent Contractors:</strong> All Artisans on the JumaLink Platform
+        are independent contractors and third-party providers. They are not employees,
+        agents, or representatives of JumaLink.
+      </p>
+      <p>
+        <strong>Vetting and Guarantees:</strong> While JumaLink makes reasonable
+        efforts to acquire and vet Artisans, we cannot and do not fully ensure, warrant,
+        or guarantee the quality or suitability of the services they provide.
+      </p>
     </section>
 
     <section>
       <h2>4. Payments and Fees</h2>
-      <p><strong>Direct Payments:</strong> JumaLink does not currently process payments for services. All payments for services rendered must be made directly between the Customer and the Artisan (e.g., via cash or mobile money).</p>
-      <p><strong>Customer Fees:</strong> JumaLink is free to use for Customers. We do not charge Customers a booking or subscription fee.</p>
-      <p><strong>Artisan Fees:</strong> Artisans are required to pay a 5% commission fee to JumaLink for jobs secured through the Platform.</p>
+      <p>
+        <strong>Direct Payments:</strong> JumaLink does not currently process payments
+        for services. All payments for services rendered must be made directly between
+        the Customer and the Artisan (e.g., via cash or mobile money).
+      </p>
+      <p>
+        <strong>Customer Fees:</strong> JumaLink is free to use for Customers. We
+        do not charge Customers a booking or subscription fee.
+      </p>
+      <p>
+        <strong>Artisan Fees:</strong> Artisans are required to pay a 5% commission
+        fee to JumaLink for jobs secured through the Platform.
+      </p>
     </section>
 
     <section>
       <h2>5. Refunds and Compensation</h2>
-      <p>Because JumaLink is an intermediary and payments are made directly to Artisans, we do not inherently offer refunds. However, if a Customer is dissatisfied with poorly performed work, they may request assistance from JumaLink. Any compensation or refund provided by JumaLink is granted solely at our discretion and only following a thorough internal investigation.</p>
+      <p>
+        Because JumaLink is an intermediary and payments are made directly to
+        Artisans, we do not inherently offer refunds. However, if a Customer is
+        dissatisfied with poorly performed work, they may request assistance
+        from JumaLink. Any compensation or refund provided by JumaLink is
+        granted solely at our discretion and only following a thorough internal
+        investigation.
+      </p>
     </section>
 
     <section>
       <h2>6. Dispute Resolution</h2>
-      <p>If a disagreement or dispute arises between a Customer and an Artisan, JumaLink will step in to mediate the situation. Users agree to cooperate fully with JumaLink’s investigation and mediation efforts. While we will attempt to resolve the issue fairly, our mediation decisions are final as far as Platform operations are concerned.</p>
+      <p>
+        If a disagreement or dispute arises between a Customer and an Artisan,
+        JumaLink will step in to mediate the situation. Users agree to cooperate
+        fully with JumaLink’s investigation and mediation efforts. While we will
+        attempt to resolve the issue fairly, our mediation decisions are final
+        as far as Platform operations are concerned.
+      </p>
     </section>
 
     <section>
       <h2>7. User Content and Licensing</h2>
-      <p><strong>Ownership:</strong> You retain ownership of all content you upload to the Platform, including reviews, profile information, and portfolio photos ("User Content").</p>
-      <p><strong>License to JumaLink:</strong> By uploading User Content, you grant JumaLink a non-exclusive, worldwide, royalty-free license to use, display, reproduce, and distribute your content for marketing, promotional, and platform-improvement purposes.</p>
+      <p>
+        <strong>Ownership:</strong> You retain ownership of all content you upload
+        to the Platform, including reviews, profile information, and portfolio photos
+        ("User Content").
+      </p>
+      <p>
+        <strong>License to JumaLink:</strong> By uploading User Content, you grant
+        JumaLink a non-exclusive, worldwide, royalty-free license to use, display,
+        reproduce, and distribute your content for marketing, promotional, and platform-improvement
+        purposes.
+      </p>
     </section>
 
     <section>
       <h2>8. Disclaimers and Limitation of Liability</h2>
-      <p><strong>Disclaimer:</strong> The Platform is provided on an "AS IS" and "AS AVAILABLE" basis. We disclaim all warranties, express or implied, regarding the reliability or accuracy of Artisan services.</p>
-      <p><strong>Liability Cap:</strong> In the event JumaLink is found liable for any claim related to the services provided by an Artisan or the use of the Platform, JumaLink's total aggregate financial liability shall be strictly capped at a maximum of <strong>GHS 1000</strong>. Any payout is subject to our internal investigation and absolute discretion.</p>
+      <p>
+        <strong>Disclaimer:</strong> The Platform is provided on an "AS IS" and "AS
+        AVAILABLE" basis. We disclaim all warranties, express or implied, regarding
+        the reliability or accuracy of Artisan services.
+      </p>
+      <p>
+        <strong>Liability Cap:</strong> In the event JumaLink is found liable
+        for any claim related to the services provided by an Artisan or the use
+        of the Platform, JumaLink's total aggregate financial liability shall be
+        strictly capped at a maximum of <strong>GHS 1000</strong>. Any payout is
+        subject to our internal investigation and absolute discretion.
+      </p>
     </section>
 
     <section>
       <h2>9. Account Termination</h2>
-      <p>JumaLink reserves the right to suspend or terminate your account and your access to the Platform at any time, for any reasonable cause, including but not limited to fraud, harassment, violation of these Terms, or conduct deemed harmful to the JumaLink community.</p>
+      <p>
+        JumaLink reserves the right to suspend or terminate your account and
+        your access to the Platform at any time, for any reasonable cause,
+        including but not limited to fraud, harassment, violation of these
+        Terms, or conduct deemed harmful to the JumaLink community.
+      </p>
     </section>
 
     <section>
       <h2>10. Governing Law</h2>
-      <p>These Terms, and any disputes arising from them or the use of the Platform, shall be governed by and construed in accordance with the laws of the Republic of Ghana, without regard to its conflict of law provisions.</p>
+      <p>
+        These Terms, and any disputes arising from them or the use of the
+        Platform, shall be governed by and construed in accordance with the laws
+        of the Republic of Ghana, without regard to its conflict of law
+        provisions.
+      </p>
     </section>
 
     <section>
       <h2>11. Contact Us</h2>
-      <p>If you have any questions or concerns regarding these Terms of Service, please contact us at:<br>
-      <strong>Email:</strong> <a href="mailto:support@jumalink.com">support@jumalink.com</a></p>
+      <p>
+        If you have any questions or concerns regarding these Terms of Service,
+        please contact us at:<br />
+        <strong>Email:</strong>
+        <a href="mailto:support@jumalink.com">support@jumalink.com</a>
+      </p>
     </section>
   </article>
 </main>
